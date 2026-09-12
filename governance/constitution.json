@@ -1,0 +1,35 @@
+{
+  "version": "adiona-constitution-draft-0.1",
+  "status": "DRAFT_NOT_RATIFIED",
+  "production_cleared": false,
+  "external_side_effects_allowed": false,
+  "authority_roots": "fixture only; no real principals configured",
+  "laws": [
+    {
+      "id": "NP",
+      "name": "Non-Promotion",
+      "rule": "No stronger authority without transition-specific warrant."
+    },
+    {
+      "id": "SA",
+      "name": "Separation of Authority",
+      "rule": "Epistemic, normative, decision, execution and audit functions retain their types."
+    },
+    {
+      "id": "CO",
+      "name": "Corrigibility",
+      "rule": "Authority remains bounded, reviewable, expiring and revocable."
+    }
+  ],
+  "planes": [
+    "Purpose",
+    "Epistemic",
+    "Normative",
+    "Strategic",
+    "Decision",
+    "Execution",
+    "Temporal"
+  ],
+  "planes_are_mandatory_sequential_steps": false,
+  "constitutional_changes": "Not authorized by ordinary worker grants; independent institutional ratification is not implemented."
+}

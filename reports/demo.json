@@ -1,0 +1,19 @@
+{
+  "cognitive_independence_demonstrated": false,
+  "external_side_effects_allowed": false,
+  "history_verified_against_retained_head": true,
+  "message": "Welcome home.",
+  "models_evaluated": 0,
+  "old_approval_for_recovery": "DENIED",
+  "production_cleared": false,
+  "profile": "scripted sandbox demonstration",
+  "project": "Adiona",
+  "replayed_capability": "DENIED",
+  "revision": 2,
+  "state": {
+    "counter": 0,
+    "message": "Welcome home.",
+    "protected": "unchanged",
+    "status": "home"
+  }
+}

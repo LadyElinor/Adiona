@@ -1,0 +1,151 @@
+{
+  "version": "adiona-invariants-0.1",
+  "scope": "encoded contracts under the documented trusted-host assumptions",
+  "invariants": [
+    {
+      "id": "INV01",
+      "law": "NP",
+      "claim": "PROPOSE cannot mutate world or mint execution authority",
+      "tests": [
+        "test_propose_has_no_world_or_audit_effect",
+        "test_manual_action_cannot_impersonate_registered_proposer"
+      ]
+    },
+    {
+      "id": "INV02",
+      "law": "NP",
+      "claim": "Decision warrant is not execution permission",
+      "tests": [
+        "test_decision_is_not_execution_permission",
+        "test_no_capability_no_commit"
+      ]
+    },
+    {
+      "id": "INV03",
+      "law": "NP",
+      "claim": "Exact action binding",
+      "tests": [
+        "test_E1_replanning_invalidates_prior_approval",
+        "test_E2_changed_approved_arguments_rejected"
+      ]
+    },
+    {
+      "id": "INV04",
+      "law": "SA",
+      "claim": "Capability consumed at most once in this database",
+      "tests": [
+        "test_E3_single_use_capability",
+        "test_competing_commits_consume_capability_once"
+      ]
+    },
+    {
+      "id": "INV05",
+      "law": "SA",
+      "claim": "Authenticate roles before mutation or authority issuance",
+      "tests": [
+        "test_E4_invalid_executor_rejected_before_mutation",
+        "test_E5_invalid_authorizer_leaves_no_spendable_approval"
+      ]
+    },
+    {
+      "id": "INV06",
+      "law": "SA",
+      "claim": "World, budgets, consumption and receipt commit together",
+      "tests": [
+        "test_E6_mixed_validity_edits_are_atomic",
+        "test_receipt_write_failure_rolls_back_everything"
+      ]
+    },
+    {
+      "id": "INV07",
+      "law": "NP",
+      "claim": "Names are not human review or evidence",
+      "tests": [
+        "test_M1_bare_human_label_is_not_approval",
+        "test_M2_bare_evidence_producer_is_not_evidence"
+      ]
+    },
+    {
+      "id": "INV08",
+      "law": "NP",
+      "claim": "Uncertainty and failed duties do not become authority by retry or human override",
+      "tests": [
+        "test_unknown_duty_requires_evidence",
+        "test_human_review_does_not_override_failed_duty",
+        "test_denied_retry_does_not_gain_authority"
+      ]
+    },
+    {
+      "id": "INV09",
+      "law": "CO",
+      "claim": "Changed world, policy or authority invalidate old approval",
+      "tests": [
+        "test_policy_change_invalidates_prior_approval",
+        "test_stale_world_invalidates_other_capability",
+        "test_halt_and_resume_do_not_restore_old_approval"
+      ]
+    },
+    {
+      "id": "INV10",
+      "law": "CO",
+      "claim": "Delegation cannot expand ancestry or evade revocation",
+      "tests": [
+        "test_root_revocation_invalidates_child",
+        "test_delegation_cannot_expand_scope",
+        "test_parent_budget_shared_across_children"
+      ]
+    },
+    {
+      "id": "INV11",
+      "law": "CO",
+      "claim": "Recovery needs fresh action-specific authority",
+      "tests": [
+        "test_recovery_is_new_action_with_new_authorization",
+        "test_recovery_cannot_invent_prior_execution"
+      ]
+    },
+    {
+      "id": "INV12",
+      "law": "SA",
+      "claim": "Apparent plurality is not fixture trust-domain separation",
+      "tests": [
+        "test_common_trust_domain_is_not_independence"
+      ]
+    },
+    {
+      "id": "INV13",
+      "law": "CO",
+      "claim": "Record supplied dissent, predictions and reconsideration conditions",
+      "tests": [
+        "test_prediction_and_reconsideration_memory_preserved",
+        "test_decision_retains_alternatives_dissent_and_qualifications"
+      ]
+    },
+    {
+      "id": "INV14",
+      "law": "CO",
+      "claim": "Unknown external outcome does not authorize retry",
+      "tests": [
+        "test_unknown_outcome_cannot_blindly_retry"
+      ]
+    },
+    {
+      "id": "INV15",
+      "law": "SA",
+      "claim": "Telemetry is not an authority or single wisdom score",
+      "tests": [
+        "test_separate_material_and_irrelevant_metrics",
+        "test_empty_challenge_data_not_perfect_score"
+      ]
+    },
+    {
+      "id": "INV16",
+      "law": "SA",
+      "claim": "Seed never declares deployment clearance",
+      "tests": [
+        "test_deployment_check_is_closed",
+        "test_runtime_has_no_external_execution_imports"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "version": "adiona-source-manifest-0.1",
+  "date": "2026-09-12",
+  "source_files_distributed": false,
+  "inputs": [
+    {
+      "label": "FDSM design review",
+      "sha256": "85975a8c09852b75a9e356784fa5cd8a8aa8d801b623c342a6d71b76760e7b6d",
+      "included_in_repository": false
+    },
+    {
+      "label": "FDSM prior boundary probe report",
+      "sha256": "421fc644d4b59cef8cdcb087ad524f57fd9ae434c299924ee848a9c2c3f4651f",
+      "included_in_repository": false
+    },
+    {
+      "label": "WIA blinded user-supplied manuscript",
+      "sha256": "f03320bc8d4b5cc03153abfdd71181ce2e06aa6067df5b4a8916ab93cc6e69b5",
+      "included_in_repository": false
+    }
+  ],
+  "prior_review_repo_pins": {
+    "Fidelis": "57c94ff78cecd0feb48dbb22e557842a82d22e0d",
+    "ERBA": "7a9cd9694c67e83fa5c084a1b4bb0a5c8c31d506",
+    "Metanoia": "1c555b4fcb18eb5fc715ef86b80e970a92bb0f35"
+  },
+  "third_party_repository_code_copied": false,
+  "ERBA_frozen_files_modified": false
+}

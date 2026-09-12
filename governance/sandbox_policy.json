@@ -1,0 +1,32 @@
+{
+  "version": "adiona-sandbox-0.1",
+  "domain": "sandbox",
+  "required_facets": [
+    "duties",
+    "rights",
+    "warrant"
+  ],
+  "allowed_keys": [
+    "counter",
+    "message",
+    "status"
+  ],
+  "protected_keys": [
+    "protected"
+  ],
+  "max_edits": 8,
+  "max_commits": 100,
+  "assessment_ttl_seconds": 300,
+  "capability_ttl_seconds": 60,
+  "human_required": false,
+  "bridges": [
+    [
+      "recommendation",
+      "decision_warrant"
+    ],
+    [
+      "decision_warrant",
+      "execution_authorization"
+    ]
+  ]
+}

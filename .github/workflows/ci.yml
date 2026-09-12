@@ -1,0 +1,47 @@
+name: adiona-ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: adiona-ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  tests:
+    name: tests-python-${{ matrix.python }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.11', '3.13']
+    steps:
+      - name: Checkout proposed code without persisting credentials
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6 reference resolved at initialization
+        with:
+          persist-credentials: false
+      - name: Select Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6 reference resolved at initialization
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Run local contract tests and sandbox demonstration
+        run: python scripts/validate.py
+      - name: Confirm deployment remains closed
+        shell: bash
+        run: |
+          set +e
+          python -m adiona deployment-check
+          status=$?
+          set -e
+          test "$status" -eq 2
+
+# This tests proposed code without privileged credentials. It is NOT a trusted
+# constitutional verifier, an independent review, or a branch ruleset. No merge,
+# deployment or policy-write step exists. Establish external enforcement first.

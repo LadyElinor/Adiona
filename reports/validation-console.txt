@@ -1,0 +1,127 @@
+test_demo_returns_home_under_fresh_authority (test_cli_governance.CLITests.test_demo_returns_home_under_fresh_authority) ... ok
+test_deployment_check_is_closed (test_cli_governance.CLITests.test_deployment_check_is_closed) ... ok
+test_status_reports_limits (test_cli_governance.CLITests.test_status_reports_limits) ... ok
+test_constitution_draft_keeps_seven_planes_nonsequential (test_cli_governance.GovernanceTests.test_constitution_draft_keeps_seven_planes_nonsequential) ... ok
+test_every_declared_invariant_names_existing_tests (test_cli_governance.GovernanceTests.test_every_declared_invariant_names_existing_tests) ... ok
+test_policy_example_matches_runtime (test_cli_governance.GovernanceTests.test_policy_example_matches_runtime) ... ok
+test_registry_matches_runtime_bridges (test_cli_governance.GovernanceTests.test_registry_matches_runtime_bridges) ... ok
+test_runtime_has_no_external_execution_imports (test_cli_governance.GovernanceTests.test_runtime_has_no_external_execution_imports) ... ok
+test_source_artifacts_are_not_distributed (test_cli_governance.GovernanceTests.test_source_artifacts_are_not_distributed) ... ok
+test_workflow_pins_actions_and_has_no_privileged_trigger (test_cli_governance.GovernanceTests.test_workflow_pins_actions_and_has_no_privileged_trigger) ... ok
+test_bool_is_not_integer_budget (test_contracts.CanonicalTests.test_bool_is_not_integer_budget) ... ok
+test_duplicate_json_keys_rejected (test_contracts.CanonicalTests.test_duplicate_json_keys_rejected) ... ok
+test_envelope_purpose_separation (test_contracts.CanonicalTests.test_envelope_purpose_separation) ... ok
+test_nesting_limit (test_contracts.CanonicalTests.test_nesting_limit) ... ok
+test_order_invariant (test_contracts.CanonicalTests.test_order_invariant) ... ok
+test_policy_cannot_disable_core_assessments (test_contracts.CanonicalTests.test_policy_cannot_disable_core_assessments) ... ok
+test_policy_conflicting_allowed_and_protected_key (test_contracts.CanonicalTests.test_policy_conflicting_allowed_and_protected_key) ... ok
+test_policy_has_no_production_enable_switch (test_contracts.CanonicalTests.test_policy_has_no_production_enable_switch) ... ok
+test_policy_requires_both_warrant_bridges (test_contracts.CanonicalTests.test_policy_requires_both_warrant_bridges) ... ok
+test_shared_authentication_key_rejected (test_contracts.CanonicalTests.test_shared_authentication_key_rejected) ... ok
+test_short_authentication_key_rejected (test_contracts.CanonicalTests.test_short_authentication_key_rejected) ... ok
+test_size_limit (test_contracts.CanonicalTests.test_size_limit) ... ok
+test_unsupported_values_rejected (test_contracts.CanonicalTests.test_unsupported_values_rejected) ... ok
+test_utf8_round_trip (test_contracts.CanonicalTests.test_utf8_round_trip) ... ok
+test_E1_replanning_invalidates_prior_approval (test_kernel.KernelTests.test_E1_replanning_invalidates_prior_approval) ... ok
+test_E2_changed_approved_arguments_rejected (test_kernel.KernelTests.test_E2_changed_approved_arguments_rejected) ... ok
+test_E3_single_use_capability (test_kernel.KernelTests.test_E3_single_use_capability) ... ok
+test_E4_invalid_executor_rejected_before_mutation (test_kernel.KernelTests.test_E4_invalid_executor_rejected_before_mutation) ... ok
+test_E5_invalid_authorizer_leaves_no_spendable_approval (test_kernel.KernelTests.test_E5_invalid_authorizer_leaves_no_spendable_approval) ... ok
+test_E6_mixed_validity_edits_are_atomic (test_kernel.KernelTests.test_E6_mixed_validity_edits_are_atomic) ... ok
+test_M1_bare_human_label_is_not_approval (test_kernel.KernelTests.test_M1_bare_human_label_is_not_approval) ... ok
+test_M2_bare_evidence_producer_is_not_evidence (test_kernel.KernelTests.test_M2_bare_evidence_producer_is_not_evidence) ... ok
+test_action_has_no_mutable_aliases (test_kernel.KernelTests.test_action_has_no_mutable_aliases) ... ok
+test_assessment_for_other_action_denied (test_kernel.KernelTests.test_assessment_for_other_action_denied) ... ok
+test_authorized_request_can_still_fail_duties (test_kernel.KernelTests.test_authorized_request_can_still_fail_duties) ... ok
+test_capability_payload_substitution_rejected (test_kernel.KernelTests.test_capability_payload_substitution_rejected) ... ok
+test_common_trust_domain_is_not_independence (test_kernel.KernelTests.test_common_trust_domain_is_not_independence) ... ok
+test_competing_commits_consume_capability_once (test_kernel.KernelTests.test_competing_commits_consume_capability_once) ... ok
+test_decision_is_not_execution_permission (test_kernel.KernelTests.test_decision_is_not_execution_permission) ... ok
+test_decision_retains_alternatives_dissent_and_qualifications (test_kernel.KernelTests.test_decision_retains_alternatives_dissent_and_qualifications) ... ok
+test_delegation_cannot_expand_budget (test_kernel.KernelTests.test_delegation_cannot_expand_budget) ... ok
+test_delegation_cannot_expand_lifetime (test_kernel.KernelTests.test_delegation_cannot_expand_lifetime) ... ok
+test_delegation_cannot_expand_scope (test_kernel.KernelTests.test_delegation_cannot_expand_scope) ... ok
+test_denied_retry_does_not_gain_authority (test_kernel.KernelTests.test_denied_retry_does_not_gain_authority) ... ok
+test_deny_decisions_remain_reconstructable (test_kernel.KernelTests.test_deny_decisions_remain_reconstructable) ... ok
+test_domain_relabeling_denied (test_kernel.KernelTests.test_domain_relabeling_denied) ... ok
+test_duplicate_assessment_facet_denied (test_kernel.KernelTests.test_duplicate_assessment_facet_denied) ... ok
+test_duplicate_patch_keys_rejected (test_kernel.KernelTests.test_duplicate_patch_keys_rejected) ... ok
+test_empty_evidence_refs_do_not_satisfy_warrant (test_kernel.KernelTests.test_empty_evidence_refs_do_not_satisfy_warrant) ... ok
+test_expired_assessment_denied (test_kernel.KernelTests.test_expired_assessment_denied) ... ok
+test_expired_capability_denied (test_kernel.KernelTests.test_expired_capability_denied) ... ok
+test_expired_decision_cannot_issue_capability (test_kernel.KernelTests.test_expired_decision_cannot_issue_capability) ... ok
+test_external_target_is_rejected (test_kernel.KernelTests.test_external_target_is_rejected) ... ok
+test_fail_dominates_unknown (test_kernel.KernelTests.test_fail_dominates_unknown) ... ok
+test_forged_known_principal_rejected (test_kernel.KernelTests.test_forged_known_principal_rejected) ... ok
+test_future_dated_assessment_denied (test_kernel.KernelTests.test_future_dated_assessment_denied) ... ok
+test_global_budget_survives_new_intent (test_kernel.KernelTests.test_global_budget_survives_new_intent) ... ok
+test_grant_identity_cannot_be_reused (test_kernel.KernelTests.test_grant_identity_cannot_be_reused) ... ok
+test_halt_and_resume_do_not_restore_old_approval (test_kernel.KernelTests.test_halt_and_resume_do_not_restore_old_approval) ... ok
+test_happy_path_commits_once (test_kernel.KernelTests.test_happy_path_commits_once) ... ok
+test_history_tampering_detected (test_kernel.KernelTests.test_history_tampering_detected) ... ok
+test_human_gate_needs_authenticated_fresh_review (test_kernel.KernelTests.test_human_gate_needs_authenticated_fresh_review) ... ok
+test_human_review_does_not_override_failed_duty (test_kernel.KernelTests.test_human_review_does_not_override_failed_duty) ... ok
+test_issuer_substitution_rejected (test_kernel.KernelTests.test_issuer_substitution_rejected) ... ok
+test_manual_action_cannot_impersonate_registered_proposer (test_kernel.KernelTests.test_manual_action_cannot_impersonate_registered_proposer) ... ok
+test_missing_facet_requires_evidence (test_kernel.KernelTests.test_missing_facet_requires_evidence) ... ok
+test_missing_parent_denied (test_kernel.KernelTests.test_missing_parent_denied) ... ok
+test_no_capability_no_commit (test_kernel.KernelTests.test_no_capability_no_commit) ... ok
+test_no_implicit_policy_overwrite_on_restart (test_kernel.KernelTests.test_no_implicit_policy_overwrite_on_restart) ... ok
+test_parent_budget_shared_across_children (test_kernel.KernelTests.test_parent_budget_shared_across_children) ... ok
+test_policy_change_invalidates_prior_approval (test_kernel.KernelTests.test_policy_change_invalidates_prior_approval) ... ok
+test_prediction_and_reconsideration_memory_preserved (test_kernel.KernelTests.test_prediction_and_reconsideration_memory_preserved) ... ok
+test_propose_has_no_world_or_audit_effect (test_kernel.KernelTests.test_propose_has_no_world_or_audit_effect) ... ok
+test_protected_write_is_denied (test_kernel.KernelTests.test_protected_write_is_denied) ... ok
+test_receipt_write_failure_rolls_back_everything (test_kernel.KernelTests.test_receipt_write_failure_rolls_back_everything) ... ok
+test_recovery_cannot_invent_prior_execution (test_kernel.KernelTests.test_recovery_cannot_invent_prior_execution) ... ok
+test_recovery_is_new_action_with_new_authorization (test_kernel.KernelTests.test_recovery_is_new_action_with_new_authorization) ... ok
+test_root_actions_require_root_credential (test_kernel.KernelTests.test_root_actions_require_root_credential) ... ok
+test_root_revocation_invalidates_child (test_kernel.KernelTests.test_root_revocation_invalidates_child) ... ok
+test_scope_checked_before_authorization (test_kernel.KernelTests.test_scope_checked_before_authorization) ... ok
+test_stale_world_invalidates_other_capability (test_kernel.KernelTests.test_stale_world_invalidates_other_capability) ... ok
+test_tampered_capability_signature_rejected (test_kernel.KernelTests.test_tampered_capability_signature_rejected) ... ok
+test_truncation_requires_retained_head (test_kernel.KernelTests.test_truncation_requires_retained_head) ... ok
+test_unknown_action_fields_are_rejected (test_kernel.KernelTests.test_unknown_action_fields_are_rejected) ... ok
+test_unknown_duty_requires_evidence (test_kernel.KernelTests.test_unknown_duty_requires_evidence) ... ok
+test_unknown_principal_rejected (test_kernel.KernelTests.test_unknown_principal_rejected) ... ok
+test_unregistered_decision_cannot_skip_gates (test_kernel.KernelTests.test_unregistered_decision_cannot_skip_gates) ... ok
+test_unregistered_signed_capability_rejected (test_kernel.KernelTests.test_unregistered_signed_capability_rejected) ... ok
+test_unsafe_paths_rejected_at_parsing_boundary (test_kernel.KernelTests.test_unsafe_paths_rejected_at_parsing_boundary) ... ok
+test_worker_cannot_change_policy (test_kernel.KernelTests.test_worker_cannot_change_policy) ... ok
+test_observation_does_not_reauthorize (test_recovery_telemetry.RecoveryTests.test_observation_does_not_reauthorize) ... ok
+test_observed_commit_is_terminal (test_recovery_telemetry.RecoveryTests.test_observed_commit_is_terminal) ... ok
+test_timeout_is_unknown_not_rollback (test_recovery_telemetry.RecoveryTests.test_timeout_is_unknown_not_rollback) ... ok
+test_unknown_outcome_cannot_blindly_retry (test_recovery_telemetry.RecoveryTests.test_unknown_outcome_cannot_blindly_retry) ... ok
+test_dissent_omissions_visible (test_recovery_telemetry.TelemetryTests.test_dissent_omissions_visible) ... ok
+test_empty_challenge_data_not_perfect_score (test_recovery_telemetry.TelemetryTests.test_empty_challenge_data_not_perfect_score) ... ok
+test_invalid_challenge_kind_rejected (test_recovery_telemetry.TelemetryTests.test_invalid_challenge_kind_rejected) ... ok
+test_no_dissent_is_not_proof_of_health (test_recovery_telemetry.TelemetryTests.test_no_dissent_is_not_proof_of_health) ... ok
+test_separate_material_and_irrelevant_metrics (test_recovery_telemetry.TelemetryTests.test_separate_material_and_irrelevant_metrics) ... ok
+
+----------------------------------------------------------------------
+Ran 99 tests in 3.704s
+
+OK
+{
+  "tests_run": 99,
+  "passed": true,
+  "demo": {
+    "project": "Adiona",
+    "message": "Welcome home.",
+    "profile": "scripted sandbox demonstration",
+    "revision": 2,
+    "state": {
+      "counter": 0,
+      "message": "Welcome home.",
+      "protected": "unchanged",
+      "status": "home"
+    },
+    "replayed_capability": "DENIED",
+    "old_approval_for_recovery": "DENIED",
+    "history_verified_against_retained_head": true,
+    "production_cleared": false,
+    "external_side_effects_allowed": false,
+    "models_evaluated": 0,
+    "cognitive_independence_demonstrated": false
+  }
+}

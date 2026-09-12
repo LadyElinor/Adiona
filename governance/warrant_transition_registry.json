@@ -1,0 +1,53 @@
+{
+  "version": "adiona-wtr-0.1",
+  "domain": "sandbox",
+  "runtime_binding": "adiona.contracts.BRIDGES and Kernel gates; not an arbitrary policy interpreter",
+  "bridges": [
+    {
+      "source": "recommendation",
+      "target": "decision_warrant",
+      "owner_role": "decider",
+      "requirements": [
+        "registered authenticated proposal",
+        "current world and policy",
+        "qualified authenticated duty, rights and warrant assessments",
+        "separate fixture trust domains",
+        "human review when configured"
+      ],
+      "expires_on": [
+        "assessment expiry",
+        "world change",
+        "policy change",
+        "authority change"
+      ],
+      "implementation": "Kernel.decide"
+    },
+    {
+      "source": "decision_warrant",
+      "target": "execution_authorization",
+      "owner_role": "authorizer",
+      "requirements": [
+        "registered current ALLOW decision",
+        "complete current gate reevaluation",
+        "live scoped bounded grant ancestry",
+        "exact action binding",
+        "fresh single-use nonce"
+      ],
+      "expires_on": [
+        "capability expiry",
+        "revocation",
+        "budget exhaustion",
+        "world change",
+        "policy change",
+        "authority change"
+      ],
+      "implementation": "Kernel.authorize"
+    }
+  ],
+  "execution_is_separate": true,
+  "unimplemented_promotions": [
+    "evidence to inference",
+    "inference to recommendation",
+    "problem framing to purpose warrant"
+  ]
+}

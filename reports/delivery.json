@@ -1,0 +1,14 @@
+{
+  "repository": "LadyElinor/Adiona",
+  "observed_visibility": "public",
+  "observed_initial_state": "empty repository already existed",
+  "write_attempt": "GitHub.create_file README.md",
+  "http_status": 403,
+  "error": "Resource not accessible by integration",
+  "remote_files_written": 0,
+  "remote_commit_created": false,
+  "remote_CI_verified": false,
+  "permissions_changed": false,
+  "local_repository_prepared": true,
+  "next_requirement": "authorized repository write access or owner-authenticated local Git push"
+}
