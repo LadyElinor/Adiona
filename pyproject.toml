@@ -10,6 +10,9 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = []
 
+[project.optional-dependencies]
+geometric = ["torch>=2.6,<3"]
+
 [project.scripts]
 adiona = "adiona.__main__:main"
 

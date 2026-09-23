@@ -19,3 +19,4 @@ dist/
 *.pdf
 *.zip
 .DS_Store
+runs/

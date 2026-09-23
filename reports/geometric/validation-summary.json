@@ -1,0 +1,12 @@
+{
+  "base_commit": "4566a5baace34b0823154fa9fb31bdea4192ff52",
+  "kernel_tests": 110,
+  "model_tests": 17,
+  "skipped": 0,
+  "kernel_standard_library_run": "passed with python -S",
+  "shipped_checkpoint_reproduced_exactly": true,
+  "model_digest": "3a2b568aee866e19c2f7ddc081ce8d88fd5df49e9f000d2b1ea73a966eb941bb",
+  "local_validation_only": true,
+  "governance_review": "required before merge",
+  "production_cleared": false
+}

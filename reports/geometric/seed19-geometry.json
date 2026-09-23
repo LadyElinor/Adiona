@@ -1,0 +1,235 @@
+{
+  "arm": "geometry",
+  "evaluation": {
+    "eval_seed": 8675309,
+    "families": {
+      "composition_holdout": {
+        "accepted": 128,
+        "accepted_correct": 128,
+        "accuracy_including_abstentions": 1.0,
+        "answer_change_rate": 1.0,
+        "both_correct": 128,
+        "correct": 128,
+        "count": 128,
+        "counterfactual_accuracy": 1.0,
+        "coverage": 1.0,
+        "eligible_pairs": 128,
+        "ineligible_for_one_edge_flip": 0,
+        "paired_accuracy": 1.0,
+        "raw_accuracy": 1.0,
+        "rename_reorder_consistency": 1.0,
+        "selective_accuracy": 1.0
+      },
+      "cyclic_grid": {
+        "accepted": 128,
+        "accepted_correct": 128,
+        "accuracy_including_abstentions": 1.0,
+        "correct": 128,
+        "count": 128,
+        "coverage": 1.0,
+        "raw_accuracy": 1.0,
+        "rename_reorder_consistency": 1.0,
+        "selective_accuracy": 1.0
+      },
+      "depth_ood": {
+        "accepted": 128,
+        "accepted_correct": 128,
+        "accuracy_including_abstentions": 1.0,
+        "answer_change_rate": 1.0,
+        "both_correct": 115,
+        "correct": 128,
+        "count": 128,
+        "counterfactual_accuracy": 1.0,
+        "coverage": 1.0,
+        "eligible_pairs": 115,
+        "ineligible_for_one_edge_flip": 13,
+        "paired_accuracy": 1.0,
+        "raw_accuracy": 1.0,
+        "rename_reorder_consistency": 1.0,
+        "selective_accuracy": 1.0
+      },
+      "iid": {
+        "accepted": 128,
+        "accepted_correct": 128,
+        "accuracy_including_abstentions": 1.0,
+        "answer_change_rate": 1.0,
+        "both_correct": 126,
+        "correct": 128,
+        "count": 128,
+        "counterfactual_accuracy": 1.0,
+        "coverage": 1.0,
+        "eligible_pairs": 126,
+        "ineligible_for_one_edge_flip": 2,
+        "paired_accuracy": 1.0,
+        "raw_accuracy": 1.0,
+        "rename_reorder_consistency": 1.0,
+        "selective_accuracy": 1.0
+      },
+      "tree_family": {
+        "accepted": 128,
+        "accepted_correct": 128,
+        "accuracy_including_abstentions": 1.0,
+        "answer_change_rate": 1.0,
+        "both_correct": 124,
+        "correct": 128,
+        "count": 128,
+        "counterfactual_accuracy": 1.0,
+        "coverage": 1.0,
+        "eligible_pairs": 124,
+        "ineligible_for_one_edge_flip": 4,
+        "paired_accuracy": 1.0,
+        "raw_accuracy": 1.0,
+        "rename_reorder_consistency": 1.0,
+        "selective_accuracy": 1.0
+      }
+    },
+    "limitations": [
+      "IID draws may repeat training semantics under new entity names.",
+      "Composition holdout excludes two ordered generator step pairs, not their algebraic equivalents.",
+      "Depth and tree/grid generator families are absent from training; all share unit-grid semantics.",
+      "Paired correctness is conditional on existence of a one-edge answer-changing perturbation.",
+      "Softmax confidence is uncalibrated; residual-based inconsistency detection is heuristic.",
+      "Fixed graph integration and sign decoding provide substantial inductive structure.",
+      "Geometry supervision consumes oracle coordinates beyond the task-only answer labels.",
+      "Equal examples and steps do not establish equal compute or energy.",
+      "One seed's examples are not independent training replications."
+    ],
+    "max_relative_residual": 0.15,
+    "min_confidence": 0.6,
+    "model_digest": "aec6d46f14d804c4361a05c34c786a4219157bd5b483a8eed66c12e345f34a1f",
+    "negative_controls": {
+      "contradictory_status": "inconsistent",
+      "disconnected_status": "disconnected"
+    },
+    "samples_per_family": 128,
+    "scope": "exploratory synthetic evaluation; not an AGI or Sophontic replication claim",
+    "seconds": 0.9337072700000135,
+    "version": "adiona-geometric-evaluation-v1"
+  },
+  "training": {
+    "batch_size": 64,
+    "curriculum": true,
+    "data_seed": 1729,
+    "device": "cpu",
+    "dimension": 16,
+    "examples_seen": 76800,
+    "facts_seen": 287871,
+    "geometry_weight": 0.2,
+    "history": [
+      {
+        "geometry_loss": 0.6941683292388916,
+        "loss": 2.761582136154175,
+        "max_depth": 1,
+        "step": 1,
+        "task_loss": 2.622748374938965
+      },
+      {
+        "geometry_loss": 0.004977245349436998,
+        "loss": 0.17498652637004852,
+        "max_depth": 1,
+        "step": 100,
+        "task_loss": 0.17399108409881592
+      },
+      {
+        "geometry_loss": 0.0011043818667531013,
+        "loss": 0.06498826295137405,
+        "max_depth": 1,
+        "step": 200,
+        "task_loss": 0.06476738303899765
+      },
+      {
+        "geometry_loss": 0.00042242996278218925,
+        "loss": 0.04156901687383652,
+        "max_depth": 1,
+        "step": 300,
+        "task_loss": 0.0414845310151577
+      },
+      {
+        "geometry_loss": 0.00014261067553889006,
+        "loss": 0.02406594343483448,
+        "max_depth": 2,
+        "step": 400,
+        "task_loss": 0.024037420749664307
+      },
+      {
+        "geometry_loss": 7.690685743000358e-05,
+        "loss": 0.014271126128733158,
+        "max_depth": 2,
+        "step": 500,
+        "task_loss": 0.014255744405090809
+      },
+      {
+        "geometry_loss": 4.5583408791571856e-05,
+        "loss": 0.010982238687574863,
+        "max_depth": 2,
+        "step": 600,
+        "task_loss": 0.010973121970891953
+      },
+      {
+        "geometry_loss": 2.46578965743538e-05,
+        "loss": 0.008491692133247852,
+        "max_depth": 3,
+        "step": 700,
+        "task_loss": 0.008486760780215263
+      },
+      {
+        "geometry_loss": 1.9521170543157496e-05,
+        "loss": 0.007418777793645859,
+        "max_depth": 3,
+        "step": 800,
+        "task_loss": 0.007414873689413071
+      },
+      {
+        "geometry_loss": 1.1828478818642907e-05,
+        "loss": 0.005166630260646343,
+        "max_depth": 3,
+        "step": 900,
+        "task_loss": 0.00516426470130682
+      },
+      {
+        "geometry_loss": 9.62807553150924e-06,
+        "loss": 0.004108406137675047,
+        "max_depth": 4,
+        "step": 1000,
+        "task_loss": 0.004106480628252029
+      },
+      {
+        "geometry_loss": 6.227460744412383e-06,
+        "loss": 0.004634273704141378,
+        "max_depth": 4,
+        "step": 1100,
+        "task_loss": 0.00463302806019783
+      },
+      {
+        "geometry_loss": 4.784491920872824e-06,
+        "loss": 0.003795695723965764,
+        "max_depth": 4,
+        "step": 1200,
+        "task_loss": 0.0037947387900203466
+      }
+    ],
+    "learning_rate": 0.02,
+    "parameters": 180,
+    "production_cleared": false,
+    "python": "3.12.14",
+    "scope": "synthetic unit-grid relations; exploratory research",
+    "seconds": 1.66757263800082,
+    "seed": 19,
+    "selection": "fixed final step; no evaluation-driven checkpoint selection",
+    "source_sha256": {
+      "__init__.py": "b7d3a215ff7758e7c2bc0513375ad70cc9a09e08156c0a4f56d5debc925a5b4c",
+      "__main__.py": "391cfda46f60584754c5d4c2bee012b4aa1cb34b05331d1aa90076646517d009",
+      "adapter.py": "a8e6b0b340135568420ddb6eb7f2694779e9a40837a2f6bf593f072ed0396a8b",
+      "contracts.py": "32b2dc0274f1f9fd7d4b6414db3b313a637fde580d28eb19649662862eb679d3",
+      "data.py": "2e31d1030315a42a3e384347c28e3b71af941dc892a9db5faa245739307bc3a0",
+      "evaluation.py": "fe095c1fad15f56d32a69464d663fa067f54d8fc90577bcc12dfe04f0e7bb9dd",
+      "model.py": "d74c02f9efc1319843811fd28d22b9d3793b221780375016ce1ebcc09d59ffa3",
+      "training.py": "74c6a59b19ded548adc2a0a27f5ffbb74e3e7ffe0e6ee886c3a1b8c8450ff202"
+    },
+    "steps": 1200,
+    "threads": 1,
+    "torch": "2.14.0+cpu",
+    "training_examples": 512,
+    "training_task_digest": "60bc4122115ec01df32c55bb18d6b39a061248e9f15f62885dd15d5773e2f983"
+  }
+}

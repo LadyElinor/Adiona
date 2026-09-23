@@ -1,0 +1,24 @@
+{
+  "version": "adiona-geometric-task-v1",
+  "entities": [
+    "A",
+    "B",
+    "C"
+  ],
+  "facts": [
+    {
+      "subject": "A",
+      "relation": "E",
+      "object": "B"
+    },
+    {
+      "subject": "B",
+      "relation": "N",
+      "object": "C"
+    }
+  ],
+  "query": [
+    "A",
+    "C"
+  ]
+}

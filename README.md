@@ -32,7 +32,7 @@ solution to AI alignment**. Read [the threat model](docs/THREAT_MODEL.md) and
 
 ## Run it
 
-Python 3.11 or later. The runtime and test suite use only the standard library.
+Python 3.11 or later. The core runtime and its test suite use only the standard library.
 From the repository root:
 
 ```bash
@@ -48,6 +48,34 @@ not enable deployment. The demo creates a temporary local database, makes a
 bounded outward transition, rejects replay, and returns through a newly assessed
 and authorized recovery action. It finishes with `Welcome home.` No external
 service is contacted by the demo.
+
+## Optional geometric reasoning model
+
+The **Adiona Geometric Reasoner (AGRM)** is a trainable research extension with
+learned relation embeddings, differentiable graph integration, and explicit
+supervision of representation geometry. It handles structured, multi-step
+unit-grid spatial relations. A trained 180-parameter checkpoint is included.
+This is a narrow neural-symbolic prototype, not a language model or a replication
+of Sophontic's undisclosed method.
+
+For the CPU setup, use a virtual environment and run:
+
+```bash
+python -m pip install 'torch==2.14.0' --index-url https://download.pytorch.org/whl/cpu
+python -m pip install -e .
+python -m adiona.geometric infer --model models/geometric/agrm-seed7.json --task examples/geometric/northeast.json
+python -m adiona.geometric demo --model models/geometric/agrm-seed7.json
+```
+
+The model produces advisory predictions. The demo registers an inert proposal,
+shows that missing assessments require evidence, and rejects execution without
+a capability. Model confidence never substitutes for a warrant.
+
+[Model design, mathematics, training, and limitations](docs/GEOMETRIC_REASONING.md)
+and the [checkpoint model card](models/geometric/MODEL_CARD.md) describe the exact
+scope. Both geometry-supervised and task-only controls reached 100% raw accuracy
+on the initial small synthetic evaluation across three seeds; this experiment
+does **not** establish an accuracy advantage from geometry supervision.
 
 ## The three constitutional laws
 
@@ -91,6 +119,9 @@ tests/         deterministic contract, failure, concurrency and recovery tests
 docs/          design, WIA mapping, threat model, claim ledger, integration plan
 reports/       locally reproduced validation and source fingerprints
 scripts/       repeatable validation and repository checks
+research_tests/ optional PyTorch model and geometry tests
+models/        trained research checkpoint and model card
+examples/      structured geometric reasoning inputs
 .github/       pinned, read-only CI; no deployment or merge automation
 ```
 
@@ -116,6 +147,9 @@ substantive ethical evaluation and held-out adversarial trials remain necessary.
 The [roadmap](ROADMAP.md) makes these release gates explicit. Workflow files check;
 GitHub rulesets and external infrastructure enforce. This seed does not claim that
 those external controls are configured.
+
+The core CLI's `models_evaluated: 0` describes its scripted governance demo. The
+optional research model has a separate evaluation record in `reports/geometric/`.
 
 **License:** pending an explicit owner decision. No third-party repository code
 or manuscript has been relicensed by this initialization.

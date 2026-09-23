@@ -26,7 +26,7 @@ invariant map lives in `governance/invariants.json`.
 
 Adiona does not claim to solve AI alignment, establish inner alignment, certify
 wisdom, validate general ethical reasoning, provide independent multi-agent
-cognition, run real models, preserve all rights in the real world, or be ready for
+cognition, preserve all rights in the real world, or be ready for
 production. It does not claim full WIA implementation or operational integration
 with Fidelis, ERBA or Metanoia.
 
@@ -36,3 +36,15 @@ changed. The README's supported Python range is a source-compatibility target;
 `reports/validation.json` records the interpreter actually tested locally. CI
 results must be read from GitHub after a successful upload, not inferred from a
 workflow file.
+
+## Optional geometric reasoning research
+
+The `adiona.geometric` package runs a real, small trained model on structured
+synthetic spatial tasks. It introduces no language-model provider or actuator.
+Its measured capabilities and task-only comparison appear in
+`models/geometric/MODEL_CARD.md` and `reports/geometric/`. These results do not
+establish general intelligence, an accuracy gain from geometric supervision,
+calibrated confidence, reliable contradiction detection, or substantive ethical
+competence. The topology solver and sign decoder are explicit architectural
+priors. Advice can register only a normal proposal to the sandbox message field;
+the existing evidence, warrant, authorization, and execution gates still apply.
