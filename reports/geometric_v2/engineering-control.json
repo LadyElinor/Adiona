@@ -1,0 +1,33 @@
+{
+  "scope": "engineering capacity control only; no held-out generalization claim",
+  "seed": 6719,
+  "tasks": 9,
+  "steps": 200,
+  "learning_rate": 0.01,
+  "architecture": "learned",
+  "geometry_weight": 0,
+  "history": [
+    {
+      "step": 50,
+      "loss": 0.26373791694641113
+    },
+    {
+      "step": 100,
+      "loss": 0.20029759407043457
+    },
+    {
+      "step": 150,
+      "loss": 0.15519371628761292
+    },
+    {
+      "step": 200,
+      "loss": 0.11968129128217697
+    }
+  ],
+  "training_accuracy": 1.0,
+  "seconds": 1.2911527619999106,
+  "parameters": 4228,
+  "passed": true,
+  "final_evaluation_accessed": false,
+  "attempt": 1
+}
