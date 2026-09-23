@@ -1,0 +1,178 @@
+{
+  "all_metric_means": "Equal model weighting, not independent population estimates",
+  "arms": [
+    {
+      "architecture": "fixed",
+      "families": {
+        "composition_holdout": {
+          "accuracy_including_abstentions": 0.990625,
+          "coverage": 0.9994791666666667,
+          "raw_accuracy": 0.9908854166666666,
+          "selective_accuracy": 0.9911335301837271
+        },
+        "cyclic_grid": {
+          "accuracy_including_abstentions": 1.0,
+          "coverage": 1.0,
+          "raw_accuracy": 1.0,
+          "selective_accuracy": 1.0
+        },
+        "depth_ood": {
+          "accuracy_including_abstentions": 0.959375,
+          "coverage": 0.9963541666666667,
+          "raw_accuracy": 0.96015625,
+          "selective_accuracy": 0.9626219542175322
+        },
+        "iid": {
+          "accuracy_including_abstentions": 0.9622395833333334,
+          "coverage": 0.9953125,
+          "raw_accuracy": 0.9658854166666667,
+          "selective_accuracy": 0.96643600425353
+        },
+        "tree_family": {
+          "accuracy_including_abstentions": 0.96171875,
+          "coverage": 0.9981770833333333,
+          "raw_accuracy": 0.9622395833333334,
+          "selective_accuracy": 0.9633366800535476
+        }
+      },
+      "geometry_weight": 0.0,
+      "mean_forward_ms": 0.010529609723006515,
+      "mean_preprocess_ms": 0.4029631236069993,
+      "mean_primary_score": 0.9611979166666667,
+      "mean_train_accuracy": 1.0,
+      "mean_training_seconds": 0.7372132961963265,
+      "min_rename_consistency": 1.0,
+      "parameters": 180
+    },
+    {
+      "architecture": "fixed",
+      "families": {
+        "composition_holdout": {
+          "accuracy_including_abstentions": 1.0,
+          "coverage": 1.0,
+          "raw_accuracy": 1.0,
+          "selective_accuracy": 1.0
+        },
+        "cyclic_grid": {
+          "accuracy_including_abstentions": 1.0,
+          "coverage": 1.0,
+          "raw_accuracy": 1.0,
+          "selective_accuracy": 1.0
+        },
+        "depth_ood": {
+          "accuracy_including_abstentions": 1.0,
+          "coverage": 1.0,
+          "raw_accuracy": 1.0,
+          "selective_accuracy": 1.0
+        },
+        "iid": {
+          "accuracy_including_abstentions": 1.0,
+          "coverage": 1.0,
+          "raw_accuracy": 1.0,
+          "selective_accuracy": 1.0
+        },
+        "tree_family": {
+          "accuracy_including_abstentions": 1.0,
+          "coverage": 1.0,
+          "raw_accuracy": 1.0,
+          "selective_accuracy": 1.0
+        }
+      },
+      "geometry_weight": 0.2,
+      "mean_forward_ms": 0.011114286807393606,
+      "mean_preprocess_ms": 0.4054227506900234,
+      "mean_primary_score": 1.0,
+      "mean_train_accuracy": 1.0,
+      "mean_training_seconds": 0.7627117433286912,
+      "min_rename_consistency": 1.0,
+      "parameters": 180
+    },
+    {
+      "architecture": "learned",
+      "families": {
+        "composition_holdout": {
+          "accuracy_including_abstentions": 0.5942708333333333,
+          "coverage": 0.7950520833333333,
+          "raw_accuracy": 0.6408854166666667,
+          "selective_accuracy": 0.6752619607839478
+        },
+        "cyclic_grid": {
+          "accuracy_including_abstentions": 0.4518229166666667,
+          "coverage": 0.75703125,
+          "raw_accuracy": 0.51875,
+          "selective_accuracy": 0.5260433353795196
+        },
+        "depth_ood": {
+          "accuracy_including_abstentions": 0.30026041666666664,
+          "coverage": 0.7388020833333333,
+          "raw_accuracy": 0.340625,
+          "selective_accuracy": 0.40476004166814195
+        },
+        "iid": {
+          "accuracy_including_abstentions": 0.6114583333333333,
+          "coverage": 0.79140625,
+          "raw_accuracy": 0.6588541666666666,
+          "selective_accuracy": 0.7340470981540129
+        },
+        "tree_family": {
+          "accuracy_including_abstentions": 0.4239583333333333,
+          "coverage": 0.7385416666666667,
+          "raw_accuracy": 0.48098958333333336,
+          "selective_accuracy": 0.5319555379859171
+        }
+      },
+      "geometry_weight": 0.0,
+      "mean_forward_ms": 0.2315080652755973,
+      "mean_preprocess_ms": 0.4163918652782033,
+      "mean_primary_score": 0.4108072916666667,
+      "mean_train_accuracy": 0.8930989583333333,
+      "mean_training_seconds": 7.791071257270232,
+      "min_rename_consistency": 1.0,
+      "parameters": 4228
+    },
+    {
+      "architecture": "learned",
+      "families": {
+        "composition_holdout": {
+          "accuracy_including_abstentions": 0.8044270833333333,
+          "coverage": 0.91875,
+          "raw_accuracy": 0.8427083333333333,
+          "selective_accuracy": 0.8701337956646498
+        },
+        "cyclic_grid": {
+          "accuracy_including_abstentions": 0.5932291666666667,
+          "coverage": 0.88359375,
+          "raw_accuracy": 0.6427083333333333,
+          "selective_accuracy": 0.6716789773024637
+        },
+        "depth_ood": {
+          "accuracy_including_abstentions": 0.37864583333333335,
+          "coverage": 0.8411458333333334,
+          "raw_accuracy": 0.4127604166666667,
+          "selective_accuracy": 0.4502078340584147
+        },
+        "iid": {
+          "accuracy_including_abstentions": 0.8122395833333333,
+          "coverage": 0.9205729166666666,
+          "raw_accuracy": 0.8471354166666667,
+          "selective_accuracy": 0.8772763461877434
+        },
+        "tree_family": {
+          "accuracy_including_abstentions": 0.5502604166666667,
+          "coverage": 0.8255208333333334,
+          "raw_accuracy": 0.6096354166666667,
+          "selective_accuracy": 0.6674299318612968
+        }
+      },
+      "geometry_weight": 0.2,
+      "mean_forward_ms": 0.23563511249828176,
+      "mean_preprocess_ms": 0.40977435208762675,
+      "mean_primary_score": 0.5111979166666667,
+      "mean_train_accuracy": 0.9821614583333333,
+      "mean_training_seconds": 7.30394422333023,
+      "min_rename_consistency": 1.0,
+      "parameters": 4228
+    }
+  ],
+  "total_training_seconds": 248.9241078018822
+}

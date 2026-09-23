@@ -1,0 +1,21 @@
+test_checkpoint_rejects_nonfinite_duplicates_and_oversize (test_ablation.AblationTests.test_checkpoint_rejects_nonfinite_duplicates_and_oversize) ... ok
+test_disconnected_prediction_abstains (test_ablation.AblationTests.test_disconnected_prediction_abstains) ... ok
+test_fixed_path_recovers_known_displacements (test_ablation.AblationTests.test_fixed_path_recovers_known_displacements) ... ok
+test_geometry_gradient_matches_finite_difference (test_ablation.AblationTests.test_geometry_gradient_matches_finite_difference) ... ok
+test_geometry_gradients_reach_message_update_and_projection (test_ablation.AblationTests.test_geometry_gradients_reach_message_update_and_projection) ... ok
+test_json_checkpoint_roundtrip_and_tamper_rejection (test_ablation.AblationTests.test_json_checkpoint_roundtrip_and_tamper_rejection) ... ok
+test_learned_path_cannot_access_graph_solver_or_oracle (test_ablation.AblationTests.test_learned_path_cannot_access_graph_solver_or_oracle) ... ok
+test_matched_objectives_share_initialization_and_batches (test_ablation.AblationTests.test_matched_objectives_share_initialization_and_batches) ... ok
+test_nested_depth_balanced_training_subsets (test_ablation.AblationTests.test_nested_depth_balanced_training_subsets) ... ok
+test_padding_does_not_change_learned_prediction (test_ablation.AblationTests.test_padding_does_not_change_learned_prediction) ... ok
+test_query_gauge_and_geometry_targets (test_ablation.AblationTests.test_query_gauge_and_geometry_targets) ... ok
+test_renaming_and_order_equivariance (test_ablation.AblationTests.test_renaming_and_order_equivariance) ... ok
+test_shared_heads_start_identically_across_architectures (test_ablation.AblationTests.test_shared_heads_start_identically_across_architectures) ... ok
+test_source_inventory_is_nonempty_and_includes_both_versions (test_ablation.AblationTests.test_source_inventory_is_nonempty_and_includes_both_versions) ... ok
+test_v1_files_remain_byte_identical (test_ablation.AblationTests.test_v1_files_remain_byte_identical) ... ok
+test_v2_advice_still_cannot_authorize_execution (test_ablation.AblationTests.test_v2_advice_still_cannot_authorize_execution) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 1.011s
+
+OK

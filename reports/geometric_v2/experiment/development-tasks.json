@@ -1,0 +1,3842 @@
+[
+  {
+    "entities": [
+      "entity_6387513",
+      "entity_4240388",
+      "entity_2761822",
+      "entity_2374902",
+      "entity_8592118"
+    ],
+    "facts": [
+      {
+        "object": "entity_4240388",
+        "relation": "O",
+        "subject": "entity_6387513"
+      },
+      {
+        "object": "entity_8592118",
+        "relation": "SW",
+        "subject": "entity_6387513"
+      },
+      {
+        "object": "entity_2374902",
+        "relation": "O",
+        "subject": "entity_4240388"
+      },
+      {
+        "object": "entity_4240388",
+        "relation": "E",
+        "subject": "entity_2761822"
+      }
+    ],
+    "query": [
+      "entity_2374902",
+      "entity_6387513"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_178984",
+      "entity_2306538",
+      "entity_3010464",
+      "entity_9712591"
+    ],
+    "facts": [
+      {
+        "object": "entity_9712591",
+        "relation": "SW",
+        "subject": "entity_178984"
+      },
+      {
+        "object": "entity_178984",
+        "relation": "NE",
+        "subject": "entity_3010464"
+      },
+      {
+        "object": "entity_178984",
+        "relation": "S",
+        "subject": "entity_2306538"
+      }
+    ],
+    "query": [
+      "entity_2306538",
+      "entity_178984"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_6094543",
+      "entity_6955014",
+      "entity_1932881",
+      "entity_1480630",
+      "entity_439977",
+      "entity_4717355"
+    ],
+    "facts": [
+      {
+        "object": "entity_1480630",
+        "relation": "E",
+        "subject": "entity_6955014"
+      },
+      {
+        "object": "entity_6955014",
+        "relation": "W",
+        "subject": "entity_439977"
+      },
+      {
+        "object": "entity_4717355",
+        "relation": "SE",
+        "subject": "entity_6094543"
+      },
+      {
+        "object": "entity_6094543",
+        "relation": "SW",
+        "subject": "entity_439977"
+      },
+      {
+        "object": "entity_4717355",
+        "relation": "S",
+        "subject": "entity_1932881"
+      }
+    ],
+    "query": [
+      "entity_4717355",
+      "entity_6955014"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_4327052",
+      "entity_2795367",
+      "entity_2583354",
+      "entity_2656167",
+      "entity_4208637",
+      "entity_4092251",
+      "entity_461499"
+    ],
+    "facts": [
+      {
+        "object": "entity_4208637",
+        "relation": "O",
+        "subject": "entity_4327052"
+      },
+      {
+        "object": "entity_4208637",
+        "relation": "NW",
+        "subject": "entity_2583354"
+      },
+      {
+        "object": "entity_2656167",
+        "relation": "N",
+        "subject": "entity_461499"
+      },
+      {
+        "object": "entity_4092251",
+        "relation": "E",
+        "subject": "entity_461499"
+      },
+      {
+        "object": "entity_461499",
+        "relation": "SW",
+        "subject": "entity_2795367"
+      },
+      {
+        "object": "entity_4092251",
+        "relation": "O",
+        "subject": "entity_2583354"
+      }
+    ],
+    "query": [
+      "entity_4208637",
+      "entity_2795367"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_1972510",
+      "entity_8494706",
+      "entity_957270",
+      "entity_9922575"
+    ],
+    "facts": [
+      {
+        "object": "entity_957270",
+        "relation": "E",
+        "subject": "entity_1972510"
+      },
+      {
+        "object": "entity_1972510",
+        "relation": "NW",
+        "subject": "entity_8494706"
+      },
+      {
+        "object": "entity_8494706",
+        "relation": "E",
+        "subject": "entity_9922575"
+      }
+    ],
+    "query": [
+      "entity_8494706",
+      "entity_1972510"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_513124",
+      "entity_9784038",
+      "entity_3171746",
+      "entity_984218",
+      "entity_5138818"
+    ],
+    "facts": [
+      {
+        "object": "entity_9784038",
+        "relation": "E",
+        "subject": "entity_3171746"
+      },
+      {
+        "object": "entity_984218",
+        "relation": "NE",
+        "subject": "entity_3171746"
+      },
+      {
+        "object": "entity_513124",
+        "relation": "W",
+        "subject": "entity_984218"
+      },
+      {
+        "object": "entity_5138818",
+        "relation": "O",
+        "subject": "entity_3171746"
+      }
+    ],
+    "query": [
+      "entity_5138818",
+      "entity_984218"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_4612221",
+      "entity_7873883",
+      "entity_2029220",
+      "entity_7964490",
+      "entity_9926451",
+      "entity_3203172",
+      "entity_3373942"
+    ],
+    "facts": [
+      {
+        "object": "entity_9926451",
+        "relation": "NE",
+        "subject": "entity_3373942"
+      },
+      {
+        "object": "entity_4612221",
+        "relation": "SW",
+        "subject": "entity_7873883"
+      },
+      {
+        "object": "entity_3373942",
+        "relation": "E",
+        "subject": "entity_7964490"
+      },
+      {
+        "object": "entity_2029220",
+        "relation": "E",
+        "subject": "entity_7873883"
+      },
+      {
+        "object": "entity_7873883",
+        "relation": "NE",
+        "subject": "entity_3203172"
+      },
+      {
+        "object": "entity_3373942",
+        "relation": "N",
+        "subject": "entity_4612221"
+      }
+    ],
+    "query": [
+      "entity_3203172",
+      "entity_7964490"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_1894809",
+      "entity_4980117",
+      "entity_1630631",
+      "entity_6432346",
+      "entity_7646408"
+    ],
+    "facts": [
+      {
+        "object": "entity_1894809",
+        "relation": "SE",
+        "subject": "entity_1630631"
+      },
+      {
+        "object": "entity_7646408",
+        "relation": "N",
+        "subject": "entity_1630631"
+      },
+      {
+        "object": "entity_1630631",
+        "relation": "O",
+        "subject": "entity_6432346"
+      },
+      {
+        "object": "entity_1630631",
+        "relation": "NE",
+        "subject": "entity_4980117"
+      }
+    ],
+    "query": [
+      "entity_6432346",
+      "entity_7646408"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_5221905",
+      "entity_3078722",
+      "entity_4083036",
+      "entity_5747551",
+      "entity_7289130",
+      "entity_7403645",
+      "entity_2175374"
+    ],
+    "facts": [
+      {
+        "object": "entity_3078722",
+        "relation": "W",
+        "subject": "entity_7289130"
+      },
+      {
+        "object": "entity_7403645",
+        "relation": "SW",
+        "subject": "entity_2175374"
+      },
+      {
+        "object": "entity_7403645",
+        "relation": "SW",
+        "subject": "entity_7289130"
+      },
+      {
+        "object": "entity_7403645",
+        "relation": "NW",
+        "subject": "entity_5221905"
+      },
+      {
+        "object": "entity_4083036",
+        "relation": "O",
+        "subject": "entity_7289130"
+      },
+      {
+        "object": "entity_5747551",
+        "relation": "NE",
+        "subject": "entity_4083036"
+      }
+    ],
+    "query": [
+      "entity_5747551",
+      "entity_2175374"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_9201715",
+      "entity_8881268",
+      "entity_8640801",
+      "entity_7658525"
+    ],
+    "facts": [
+      {
+        "object": "entity_9201715",
+        "relation": "O",
+        "subject": "entity_7658525"
+      },
+      {
+        "object": "entity_8640801",
+        "relation": "SE",
+        "subject": "entity_7658525"
+      },
+      {
+        "object": "entity_8640801",
+        "relation": "S",
+        "subject": "entity_8881268"
+      }
+    ],
+    "query": [
+      "entity_7658525",
+      "entity_8640801"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_3433762",
+      "entity_8360382",
+      "entity_3437210",
+      "entity_78091"
+    ],
+    "facts": [
+      {
+        "object": "entity_3437210",
+        "relation": "N",
+        "subject": "entity_8360382"
+      },
+      {
+        "object": "entity_8360382",
+        "relation": "W",
+        "subject": "entity_3433762"
+      },
+      {
+        "object": "entity_78091",
+        "relation": "SW",
+        "subject": "entity_8360382"
+      }
+    ],
+    "query": [
+      "entity_8360382",
+      "entity_78091"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_8296501",
+      "entity_6753411",
+      "entity_8065441",
+      "entity_54622",
+      "entity_9260032",
+      "entity_1421122"
+    ],
+    "facts": [
+      {
+        "object": "entity_6753411",
+        "relation": "NE",
+        "subject": "entity_54622"
+      },
+      {
+        "object": "entity_1421122",
+        "relation": "W",
+        "subject": "entity_9260032"
+      },
+      {
+        "object": "entity_1421122",
+        "relation": "S",
+        "subject": "entity_8296501"
+      },
+      {
+        "object": "entity_8065441",
+        "relation": "S",
+        "subject": "entity_8296501"
+      },
+      {
+        "object": "entity_6753411",
+        "relation": "N",
+        "subject": "entity_1421122"
+      }
+    ],
+    "query": [
+      "entity_6753411",
+      "entity_8065441"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_5593858",
+      "entity_4828635",
+      "entity_3111620",
+      "entity_656788",
+      "entity_9108112",
+      "entity_6723476"
+    ],
+    "facts": [
+      {
+        "object": "entity_656788",
+        "relation": "S",
+        "subject": "entity_6723476"
+      },
+      {
+        "object": "entity_9108112",
+        "relation": "O",
+        "subject": "entity_6723476"
+      },
+      {
+        "object": "entity_3111620",
+        "relation": "NE",
+        "subject": "entity_6723476"
+      },
+      {
+        "object": "entity_4828635",
+        "relation": "O",
+        "subject": "entity_3111620"
+      },
+      {
+        "object": "entity_5593858",
+        "relation": "N",
+        "subject": "entity_6723476"
+      }
+    ],
+    "query": [
+      "entity_4828635",
+      "entity_5593858"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_4391636",
+      "entity_600553",
+      "entity_9133545",
+      "entity_2099016"
+    ],
+    "facts": [
+      {
+        "object": "entity_2099016",
+        "relation": "NW",
+        "subject": "entity_9133545"
+      },
+      {
+        "object": "entity_9133545",
+        "relation": "NW",
+        "subject": "entity_4391636"
+      },
+      {
+        "object": "entity_2099016",
+        "relation": "E",
+        "subject": "entity_600553"
+      }
+    ],
+    "query": [
+      "entity_9133545",
+      "entity_2099016"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_8387165",
+      "entity_5741401",
+      "entity_6488481",
+      "entity_9984892",
+      "entity_7888997"
+    ],
+    "facts": [
+      {
+        "object": "entity_6488481",
+        "relation": "SE",
+        "subject": "entity_8387165"
+      },
+      {
+        "object": "entity_5741401",
+        "relation": "SW",
+        "subject": "entity_6488481"
+      },
+      {
+        "object": "entity_9984892",
+        "relation": "SW",
+        "subject": "entity_6488481"
+      },
+      {
+        "object": "entity_7888997",
+        "relation": "NW",
+        "subject": "entity_6488481"
+      }
+    ],
+    "query": [
+      "entity_7888997",
+      "entity_9984892"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_8782730",
+      "entity_890624",
+      "entity_2088026",
+      "entity_8746557",
+      "entity_8541799"
+    ],
+    "facts": [
+      {
+        "object": "entity_8782730",
+        "relation": "E",
+        "subject": "entity_890624"
+      },
+      {
+        "object": "entity_8746557",
+        "relation": "N",
+        "subject": "entity_2088026"
+      },
+      {
+        "object": "entity_890624",
+        "relation": "O",
+        "subject": "entity_2088026"
+      },
+      {
+        "object": "entity_890624",
+        "relation": "O",
+        "subject": "entity_8541799"
+      }
+    ],
+    "query": [
+      "entity_2088026",
+      "entity_8782730"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_3877097",
+      "entity_9199093",
+      "entity_1040103",
+      "entity_6858473"
+    ],
+    "facts": [
+      {
+        "object": "entity_9199093",
+        "relation": "S",
+        "subject": "entity_6858473"
+      },
+      {
+        "object": "entity_3877097",
+        "relation": "SE",
+        "subject": "entity_6858473"
+      },
+      {
+        "object": "entity_9199093",
+        "relation": "O",
+        "subject": "entity_1040103"
+      }
+    ],
+    "query": [
+      "entity_6858473",
+      "entity_9199093"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_2719639",
+      "entity_4481646",
+      "entity_5277969",
+      "entity_6781753",
+      "entity_5042546",
+      "entity_2429013"
+    ],
+    "facts": [
+      {
+        "object": "entity_5042546",
+        "relation": "O",
+        "subject": "entity_6781753"
+      },
+      {
+        "object": "entity_5277969",
+        "relation": "W",
+        "subject": "entity_2719639"
+      },
+      {
+        "object": "entity_2429013",
+        "relation": "S",
+        "subject": "entity_6781753"
+      },
+      {
+        "object": "entity_4481646",
+        "relation": "NE",
+        "subject": "entity_5277969"
+      },
+      {
+        "object": "entity_6781753",
+        "relation": "O",
+        "subject": "entity_4481646"
+      }
+    ],
+    "query": [
+      "entity_5277969",
+      "entity_2429013"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_642738",
+      "entity_566055",
+      "entity_7176194",
+      "entity_1852060",
+      "entity_8773872",
+      "entity_425845"
+    ],
+    "facts": [
+      {
+        "object": "entity_8773872",
+        "relation": "W",
+        "subject": "entity_7176194"
+      },
+      {
+        "object": "entity_7176194",
+        "relation": "E",
+        "subject": "entity_642738"
+      },
+      {
+        "object": "entity_8773872",
+        "relation": "NW",
+        "subject": "entity_425845"
+      },
+      {
+        "object": "entity_425845",
+        "relation": "NE",
+        "subject": "entity_566055"
+      },
+      {
+        "object": "entity_642738",
+        "relation": "SW",
+        "subject": "entity_1852060"
+      }
+    ],
+    "query": [
+      "entity_425845",
+      "entity_642738"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_9840329",
+      "entity_734946",
+      "entity_6318068",
+      "entity_8825609",
+      "entity_881911",
+      "entity_3740768",
+      "entity_9599246"
+    ],
+    "facts": [
+      {
+        "object": "entity_8825609",
+        "relation": "NW",
+        "subject": "entity_9840329"
+      },
+      {
+        "object": "entity_8825609",
+        "relation": "N",
+        "subject": "entity_3740768"
+      },
+      {
+        "object": "entity_8825609",
+        "relation": "W",
+        "subject": "entity_734946"
+      },
+      {
+        "object": "entity_6318068",
+        "relation": "O",
+        "subject": "entity_881911"
+      },
+      {
+        "object": "entity_9840329",
+        "relation": "O",
+        "subject": "entity_9599246"
+      },
+      {
+        "object": "entity_3740768",
+        "relation": "NW",
+        "subject": "entity_6318068"
+      }
+    ],
+    "query": [
+      "entity_9599246",
+      "entity_6318068"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_9356349",
+      "entity_9263488",
+      "entity_5275654",
+      "entity_6794413"
+    ],
+    "facts": [
+      {
+        "object": "entity_9263488",
+        "relation": "SW",
+        "subject": "entity_9356349"
+      },
+      {
+        "object": "entity_9263488",
+        "relation": "SW",
+        "subject": "entity_6794413"
+      },
+      {
+        "object": "entity_9263488",
+        "relation": "NE",
+        "subject": "entity_5275654"
+      }
+    ],
+    "query": [
+      "entity_9356349",
+      "entity_9263488"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_3081996",
+      "entity_3471930",
+      "entity_2256269",
+      "entity_5297401"
+    ],
+    "facts": [
+      {
+        "object": "entity_2256269",
+        "relation": "SE",
+        "subject": "entity_3471930"
+      },
+      {
+        "object": "entity_5297401",
+        "relation": "NE",
+        "subject": "entity_2256269"
+      },
+      {
+        "object": "entity_2256269",
+        "relation": "SW",
+        "subject": "entity_3081996"
+      }
+    ],
+    "query": [
+      "entity_5297401",
+      "entity_2256269"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_8394718",
+      "entity_1412651",
+      "entity_8060841",
+      "entity_4166392",
+      "entity_2150285",
+      "entity_5351071",
+      "entity_8570925"
+    ],
+    "facts": [
+      {
+        "object": "entity_2150285",
+        "relation": "S",
+        "subject": "entity_8060841"
+      },
+      {
+        "object": "entity_8570925",
+        "relation": "O",
+        "subject": "entity_4166392"
+      },
+      {
+        "object": "entity_8394718",
+        "relation": "NE",
+        "subject": "entity_5351071"
+      },
+      {
+        "object": "entity_8570925",
+        "relation": "SW",
+        "subject": "entity_2150285"
+      },
+      {
+        "object": "entity_5351071",
+        "relation": "NW",
+        "subject": "entity_4166392"
+      },
+      {
+        "object": "entity_1412651",
+        "relation": "E",
+        "subject": "entity_5351071"
+      }
+    ],
+    "query": [
+      "entity_2150285",
+      "entity_8394718"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_7890917",
+      "entity_5996950",
+      "entity_8585409",
+      "entity_2403878",
+      "entity_6903517",
+      "entity_8757395",
+      "entity_1290184"
+    ],
+    "facts": [
+      {
+        "object": "entity_6903517",
+        "relation": "NE",
+        "subject": "entity_1290184"
+      },
+      {
+        "object": "entity_8585409",
+        "relation": "NE",
+        "subject": "entity_7890917"
+      },
+      {
+        "object": "entity_2403878",
+        "relation": "N",
+        "subject": "entity_7890917"
+      },
+      {
+        "object": "entity_8757395",
+        "relation": "S",
+        "subject": "entity_8585409"
+      },
+      {
+        "object": "entity_8585409",
+        "relation": "E",
+        "subject": "entity_1290184"
+      },
+      {
+        "object": "entity_8585409",
+        "relation": "S",
+        "subject": "entity_5996950"
+      }
+    ],
+    "query": [
+      "entity_6903517",
+      "entity_2403878"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_8643207",
+      "entity_8386926",
+      "entity_6651255",
+      "entity_3896348",
+      "entity_5649107"
+    ],
+    "facts": [
+      {
+        "object": "entity_8386926",
+        "relation": "W",
+        "subject": "entity_5649107"
+      },
+      {
+        "object": "entity_6651255",
+        "relation": "NE",
+        "subject": "entity_3896348"
+      },
+      {
+        "object": "entity_5649107",
+        "relation": "SE",
+        "subject": "entity_8643207"
+      },
+      {
+        "object": "entity_6651255",
+        "relation": "N",
+        "subject": "entity_5649107"
+      }
+    ],
+    "query": [
+      "entity_8643207",
+      "entity_6651255"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_4064851",
+      "entity_3051690",
+      "entity_7568443",
+      "entity_3436835"
+    ],
+    "facts": [
+      {
+        "object": "entity_3051690",
+        "relation": "NE",
+        "subject": "entity_7568443"
+      },
+      {
+        "object": "entity_7568443",
+        "relation": "O",
+        "subject": "entity_4064851"
+      },
+      {
+        "object": "entity_4064851",
+        "relation": "W",
+        "subject": "entity_3436835"
+      }
+    ],
+    "query": [
+      "entity_4064851",
+      "entity_7568443"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_900081",
+      "entity_2495792",
+      "entity_3781771",
+      "entity_7702021",
+      "entity_3636737",
+      "entity_3863897"
+    ],
+    "facts": [
+      {
+        "object": "entity_2495792",
+        "relation": "O",
+        "subject": "entity_900081"
+      },
+      {
+        "object": "entity_7702021",
+        "relation": "SE",
+        "subject": "entity_3636737"
+      },
+      {
+        "object": "entity_3636737",
+        "relation": "N",
+        "subject": "entity_3781771"
+      },
+      {
+        "object": "entity_3863897",
+        "relation": "N",
+        "subject": "entity_3781771"
+      },
+      {
+        "object": "entity_7702021",
+        "relation": "SE",
+        "subject": "entity_2495792"
+      }
+    ],
+    "query": [
+      "entity_2495792",
+      "entity_3781771"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_8129533",
+      "entity_7763192",
+      "entity_5238070",
+      "entity_1443623",
+      "entity_2760814"
+    ],
+    "facts": [
+      {
+        "object": "entity_7763192",
+        "relation": "S",
+        "subject": "entity_2760814"
+      },
+      {
+        "object": "entity_5238070",
+        "relation": "O",
+        "subject": "entity_7763192"
+      },
+      {
+        "object": "entity_8129533",
+        "relation": "E",
+        "subject": "entity_7763192"
+      },
+      {
+        "object": "entity_1443623",
+        "relation": "SW",
+        "subject": "entity_7763192"
+      }
+    ],
+    "query": [
+      "entity_1443623",
+      "entity_5238070"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_5188126",
+      "entity_7333726",
+      "entity_6160556",
+      "entity_8736346",
+      "entity_7489344",
+      "entity_1663661",
+      "entity_9969776"
+    ],
+    "facts": [
+      {
+        "object": "entity_6160556",
+        "relation": "NE",
+        "subject": "entity_1663661"
+      },
+      {
+        "object": "entity_7489344",
+        "relation": "NW",
+        "subject": "entity_7333726"
+      },
+      {
+        "object": "entity_9969776",
+        "relation": "NW",
+        "subject": "entity_8736346"
+      },
+      {
+        "object": "entity_7333726",
+        "relation": "W",
+        "subject": "entity_1663661"
+      },
+      {
+        "object": "entity_7489344",
+        "relation": "O",
+        "subject": "entity_9969776"
+      },
+      {
+        "object": "entity_5188126",
+        "relation": "W",
+        "subject": "entity_9969776"
+      }
+    ],
+    "query": [
+      "entity_9969776",
+      "entity_6160556"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_5405407",
+      "entity_6946573",
+      "entity_8083466",
+      "entity_9603721"
+    ],
+    "facts": [
+      {
+        "object": "entity_6946573",
+        "relation": "S",
+        "subject": "entity_9603721"
+      },
+      {
+        "object": "entity_6946573",
+        "relation": "O",
+        "subject": "entity_8083466"
+      },
+      {
+        "object": "entity_5405407",
+        "relation": "NW",
+        "subject": "entity_9603721"
+      }
+    ],
+    "query": [
+      "entity_6946573",
+      "entity_9603721"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_5154926",
+      "entity_778932",
+      "entity_6085525",
+      "entity_5636480",
+      "entity_1297958",
+      "entity_970786",
+      "entity_9709615"
+    ],
+    "facts": [
+      {
+        "object": "entity_970786",
+        "relation": "SW",
+        "subject": "entity_778932"
+      },
+      {
+        "object": "entity_5154926",
+        "relation": "NW",
+        "subject": "entity_9709615"
+      },
+      {
+        "object": "entity_778932",
+        "relation": "NW",
+        "subject": "entity_5154926"
+      },
+      {
+        "object": "entity_778932",
+        "relation": "W",
+        "subject": "entity_5636480"
+      },
+      {
+        "object": "entity_5636480",
+        "relation": "NW",
+        "subject": "entity_6085525"
+      },
+      {
+        "object": "entity_1297958",
+        "relation": "E",
+        "subject": "entity_9709615"
+      }
+    ],
+    "query": [
+      "entity_1297958",
+      "entity_5636480"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_2611112",
+      "entity_7575500",
+      "entity_9627569",
+      "entity_5835825",
+      "entity_2304397",
+      "entity_3629717"
+    ],
+    "facts": [
+      {
+        "object": "entity_3629717",
+        "relation": "SW",
+        "subject": "entity_2304397"
+      },
+      {
+        "object": "entity_7575500",
+        "relation": "SW",
+        "subject": "entity_3629717"
+      },
+      {
+        "object": "entity_5835825",
+        "relation": "O",
+        "subject": "entity_2304397"
+      },
+      {
+        "object": "entity_3629717",
+        "relation": "NE",
+        "subject": "entity_2611112"
+      },
+      {
+        "object": "entity_9627569",
+        "relation": "S",
+        "subject": "entity_2304397"
+      }
+    ],
+    "query": [
+      "entity_9627569",
+      "entity_7575500"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_8999243",
+      "entity_7824576",
+      "entity_479568",
+      "entity_1061059",
+      "entity_172968"
+    ],
+    "facts": [
+      {
+        "object": "entity_479568",
+        "relation": "W",
+        "subject": "entity_8999243"
+      },
+      {
+        "object": "entity_479568",
+        "relation": "E",
+        "subject": "entity_172968"
+      },
+      {
+        "object": "entity_479568",
+        "relation": "NE",
+        "subject": "entity_7824576"
+      },
+      {
+        "object": "entity_1061059",
+        "relation": "SW",
+        "subject": "entity_479568"
+      }
+    ],
+    "query": [
+      "entity_172968",
+      "entity_1061059"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_8105436",
+      "entity_9075625",
+      "entity_5752214",
+      "entity_1076035",
+      "entity_197728",
+      "entity_5808365"
+    ],
+    "facts": [
+      {
+        "object": "entity_197728",
+        "relation": "NW",
+        "subject": "entity_1076035"
+      },
+      {
+        "object": "entity_1076035",
+        "relation": "W",
+        "subject": "entity_8105436"
+      },
+      {
+        "object": "entity_5808365",
+        "relation": "W",
+        "subject": "entity_5752214"
+      },
+      {
+        "object": "entity_9075625",
+        "relation": "W",
+        "subject": "entity_5752214"
+      },
+      {
+        "object": "entity_9075625",
+        "relation": "SE",
+        "subject": "entity_1076035"
+      }
+    ],
+    "query": [
+      "entity_1076035",
+      "entity_5808365"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_7170866",
+      "entity_4453494",
+      "entity_7520160",
+      "entity_3107735",
+      "entity_5831083"
+    ],
+    "facts": [
+      {
+        "object": "entity_7520160",
+        "relation": "S",
+        "subject": "entity_4453494"
+      },
+      {
+        "object": "entity_3107735",
+        "relation": "NE",
+        "subject": "entity_7520160"
+      },
+      {
+        "object": "entity_7170866",
+        "relation": "NW",
+        "subject": "entity_7520160"
+      },
+      {
+        "object": "entity_7170866",
+        "relation": "S",
+        "subject": "entity_5831083"
+      }
+    ],
+    "query": [
+      "entity_3107735",
+      "entity_7170866"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_2381021",
+      "entity_1934528",
+      "entity_8477456",
+      "entity_1160725"
+    ],
+    "facts": [
+      {
+        "object": "entity_2381021",
+        "relation": "W",
+        "subject": "entity_1934528"
+      },
+      {
+        "object": "entity_1934528",
+        "relation": "SE",
+        "subject": "entity_8477456"
+      },
+      {
+        "object": "entity_1160725",
+        "relation": "SE",
+        "subject": "entity_1934528"
+      }
+    ],
+    "query": [
+      "entity_1934528",
+      "entity_1160725"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_795198",
+      "entity_4832943",
+      "entity_3939483",
+      "entity_2334788"
+    ],
+    "facts": [
+      {
+        "object": "entity_3939483",
+        "relation": "S",
+        "subject": "entity_2334788"
+      },
+      {
+        "object": "entity_795198",
+        "relation": "SW",
+        "subject": "entity_3939483"
+      },
+      {
+        "object": "entity_4832943",
+        "relation": "E",
+        "subject": "entity_3939483"
+      }
+    ],
+    "query": [
+      "entity_3939483",
+      "entity_2334788"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_9104368",
+      "entity_8786316",
+      "entity_1094426",
+      "entity_1680548",
+      "entity_9394351",
+      "entity_8785938",
+      "entity_1700047"
+    ],
+    "facts": [
+      {
+        "object": "entity_8785938",
+        "relation": "N",
+        "subject": "entity_1680548"
+      },
+      {
+        "object": "entity_1094426",
+        "relation": "N",
+        "subject": "entity_8786316"
+      },
+      {
+        "object": "entity_9394351",
+        "relation": "N",
+        "subject": "entity_8785938"
+      },
+      {
+        "object": "entity_1094426",
+        "relation": "W",
+        "subject": "entity_1700047"
+      },
+      {
+        "object": "entity_9104368",
+        "relation": "SW",
+        "subject": "entity_1680548"
+      },
+      {
+        "object": "entity_8786316",
+        "relation": "W",
+        "subject": "entity_8785938"
+      }
+    ],
+    "query": [
+      "entity_9104368",
+      "entity_1094426"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_3224583",
+      "entity_6406116",
+      "entity_9136204",
+      "entity_8290736",
+      "entity_6237223",
+      "entity_4162407"
+    ],
+    "facts": [
+      {
+        "object": "entity_3224583",
+        "relation": "S",
+        "subject": "entity_4162407"
+      },
+      {
+        "object": "entity_9136204",
+        "relation": "O",
+        "subject": "entity_6406116"
+      },
+      {
+        "object": "entity_3224583",
+        "relation": "O",
+        "subject": "entity_8290736"
+      },
+      {
+        "object": "entity_6237223",
+        "relation": "NW",
+        "subject": "entity_6406116"
+      },
+      {
+        "object": "entity_4162407",
+        "relation": "N",
+        "subject": "entity_9136204"
+      }
+    ],
+    "query": [
+      "entity_3224583",
+      "entity_6406116"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_894601",
+      "entity_1203624",
+      "entity_5538408",
+      "entity_2903144",
+      "entity_9268822",
+      "entity_1247955",
+      "entity_379247"
+    ],
+    "facts": [
+      {
+        "object": "entity_894601",
+        "relation": "O",
+        "subject": "entity_1247955"
+      },
+      {
+        "object": "entity_1247955",
+        "relation": "S",
+        "subject": "entity_9268822"
+      },
+      {
+        "object": "entity_1203624",
+        "relation": "NE",
+        "subject": "entity_5538408"
+      },
+      {
+        "object": "entity_2903144",
+        "relation": "E",
+        "subject": "entity_894601"
+      },
+      {
+        "object": "entity_1203624",
+        "relation": "E",
+        "subject": "entity_894601"
+      },
+      {
+        "object": "entity_5538408",
+        "relation": "NW",
+        "subject": "entity_379247"
+      }
+    ],
+    "query": [
+      "entity_5538408",
+      "entity_9268822"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_4159531",
+      "entity_3993915",
+      "entity_9453930",
+      "entity_3790995",
+      "entity_1556561",
+      "entity_5154868"
+    ],
+    "facts": [
+      {
+        "object": "entity_5154868",
+        "relation": "N",
+        "subject": "entity_3993915"
+      },
+      {
+        "object": "entity_5154868",
+        "relation": "SW",
+        "subject": "entity_9453930"
+      },
+      {
+        "object": "entity_5154868",
+        "relation": "O",
+        "subject": "entity_1556561"
+      },
+      {
+        "object": "entity_4159531",
+        "relation": "SE",
+        "subject": "entity_3993915"
+      },
+      {
+        "object": "entity_3790995",
+        "relation": "SW",
+        "subject": "entity_9453930"
+      }
+    ],
+    "query": [
+      "entity_3993915",
+      "entity_3790995"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_6922864",
+      "entity_6929085",
+      "entity_4747336",
+      "entity_9411028",
+      "entity_8958446"
+    ],
+    "facts": [
+      {
+        "object": "entity_4747336",
+        "relation": "SE",
+        "subject": "entity_8958446"
+      },
+      {
+        "object": "entity_4747336",
+        "relation": "SE",
+        "subject": "entity_9411028"
+      },
+      {
+        "object": "entity_6922864",
+        "relation": "SW",
+        "subject": "entity_8958446"
+      },
+      {
+        "object": "entity_4747336",
+        "relation": "E",
+        "subject": "entity_6929085"
+      }
+    ],
+    "query": [
+      "entity_6929085",
+      "entity_8958446"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_4534168",
+      "entity_497583",
+      "entity_5148116",
+      "entity_9384615",
+      "entity_4679660"
+    ],
+    "facts": [
+      {
+        "object": "entity_9384615",
+        "relation": "SE",
+        "subject": "entity_4679660"
+      },
+      {
+        "object": "entity_4534168",
+        "relation": "S",
+        "subject": "entity_497583"
+      },
+      {
+        "object": "entity_5148116",
+        "relation": "NW",
+        "subject": "entity_497583"
+      },
+      {
+        "object": "entity_4679660",
+        "relation": "SE",
+        "subject": "entity_4534168"
+      }
+    ],
+    "query": [
+      "entity_497583",
+      "entity_4679660"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_7216204",
+      "entity_1832184",
+      "entity_1001960",
+      "entity_9073240",
+      "entity_1169671"
+    ],
+    "facts": [
+      {
+        "object": "entity_9073240",
+        "relation": "E",
+        "subject": "entity_1832184"
+      },
+      {
+        "object": "entity_1001960",
+        "relation": "E",
+        "subject": "entity_1832184"
+      },
+      {
+        "object": "entity_1001960",
+        "relation": "O",
+        "subject": "entity_1169671"
+      },
+      {
+        "object": "entity_7216204",
+        "relation": "SW",
+        "subject": "entity_9073240"
+      }
+    ],
+    "query": [
+      "entity_1001960",
+      "entity_9073240"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_1093665",
+      "entity_3871234",
+      "entity_2950610",
+      "entity_3341242",
+      "entity_7292525",
+      "entity_2916701",
+      "entity_6148777"
+    ],
+    "facts": [
+      {
+        "object": "entity_2950610",
+        "relation": "NE",
+        "subject": "entity_6148777"
+      },
+      {
+        "object": "entity_3871234",
+        "relation": "S",
+        "subject": "entity_6148777"
+      },
+      {
+        "object": "entity_3871234",
+        "relation": "E",
+        "subject": "entity_7292525"
+      },
+      {
+        "object": "entity_2916701",
+        "relation": "NE",
+        "subject": "entity_1093665"
+      },
+      {
+        "object": "entity_6148777",
+        "relation": "SW",
+        "subject": "entity_3341242"
+      },
+      {
+        "object": "entity_7292525",
+        "relation": "NE",
+        "subject": "entity_2916701"
+      }
+    ],
+    "query": [
+      "entity_2916701",
+      "entity_2950610"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_7482066",
+      "entity_4874730",
+      "entity_2380514",
+      "entity_5134313",
+      "entity_9997398",
+      "entity_5761806",
+      "entity_2948847"
+    ],
+    "facts": [
+      {
+        "object": "entity_5134313",
+        "relation": "NE",
+        "subject": "entity_2948847"
+      },
+      {
+        "object": "entity_5134313",
+        "relation": "NE",
+        "subject": "entity_9997398"
+      },
+      {
+        "object": "entity_2380514",
+        "relation": "S",
+        "subject": "entity_7482066"
+      },
+      {
+        "object": "entity_5134313",
+        "relation": "NW",
+        "subject": "entity_5761806"
+      },
+      {
+        "object": "entity_4874730",
+        "relation": "W",
+        "subject": "entity_7482066"
+      },
+      {
+        "object": "entity_7482066",
+        "relation": "W",
+        "subject": "entity_5761806"
+      }
+    ],
+    "query": [
+      "entity_2948847",
+      "entity_4874730"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_571891",
+      "entity_1164648",
+      "entity_4800893",
+      "entity_3610536",
+      "entity_6368362",
+      "entity_1784820",
+      "entity_3618309"
+    ],
+    "facts": [
+      {
+        "object": "entity_6368362",
+        "relation": "E",
+        "subject": "entity_571891"
+      },
+      {
+        "object": "entity_3610536",
+        "relation": "SW",
+        "subject": "entity_4800893"
+      },
+      {
+        "object": "entity_1164648",
+        "relation": "N",
+        "subject": "entity_4800893"
+      },
+      {
+        "object": "entity_3610536",
+        "relation": "O",
+        "subject": "entity_6368362"
+      },
+      {
+        "object": "entity_1784820",
+        "relation": "N",
+        "subject": "entity_6368362"
+      },
+      {
+        "object": "entity_3610536",
+        "relation": "NW",
+        "subject": "entity_3618309"
+      }
+    ],
+    "query": [
+      "entity_1164648",
+      "entity_571891"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_5573464",
+      "entity_616730",
+      "entity_4726236",
+      "entity_756040",
+      "entity_9524989",
+      "entity_8900754"
+    ],
+    "facts": [
+      {
+        "object": "entity_5573464",
+        "relation": "NW",
+        "subject": "entity_8900754"
+      },
+      {
+        "object": "entity_5573464",
+        "relation": "E",
+        "subject": "entity_9524989"
+      },
+      {
+        "object": "entity_756040",
+        "relation": "O",
+        "subject": "entity_8900754"
+      },
+      {
+        "object": "entity_9524989",
+        "relation": "NE",
+        "subject": "entity_616730"
+      },
+      {
+        "object": "entity_4726236",
+        "relation": "NW",
+        "subject": "entity_8900754"
+      }
+    ],
+    "query": [
+      "entity_8900754",
+      "entity_616730"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_9941629",
+      "entity_7916698",
+      "entity_3439036",
+      "entity_5465815",
+      "entity_7187976",
+      "entity_8122204"
+    ],
+    "facts": [
+      {
+        "object": "entity_9941629",
+        "relation": "SE",
+        "subject": "entity_8122204"
+      },
+      {
+        "object": "entity_5465815",
+        "relation": "SE",
+        "subject": "entity_7187976"
+      },
+      {
+        "object": "entity_8122204",
+        "relation": "N",
+        "subject": "entity_7916698"
+      },
+      {
+        "object": "entity_5465815",
+        "relation": "W",
+        "subject": "entity_3439036"
+      },
+      {
+        "object": "entity_7187976",
+        "relation": "NW",
+        "subject": "entity_8122204"
+      }
+    ],
+    "query": [
+      "entity_8122204",
+      "entity_3439036"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_6086351",
+      "entity_2950925",
+      "entity_7751257",
+      "entity_5675228",
+      "entity_7629407",
+      "entity_6654638",
+      "entity_4034088"
+    ],
+    "facts": [
+      {
+        "object": "entity_2950925",
+        "relation": "SE",
+        "subject": "entity_7629407"
+      },
+      {
+        "object": "entity_4034088",
+        "relation": "NE",
+        "subject": "entity_7751257"
+      },
+      {
+        "object": "entity_4034088",
+        "relation": "NE",
+        "subject": "entity_2950925"
+      },
+      {
+        "object": "entity_5675228",
+        "relation": "SE",
+        "subject": "entity_6654638"
+      },
+      {
+        "object": "entity_7751257",
+        "relation": "NE",
+        "subject": "entity_6086351"
+      },
+      {
+        "object": "entity_5675228",
+        "relation": "NW",
+        "subject": "entity_6086351"
+      }
+    ],
+    "query": [
+      "entity_2950925",
+      "entity_5675228"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_4473356",
+      "entity_9719748",
+      "entity_4077657",
+      "entity_4166089"
+    ],
+    "facts": [
+      {
+        "object": "entity_4077657",
+        "relation": "SE",
+        "subject": "entity_4473356"
+      },
+      {
+        "object": "entity_4077657",
+        "relation": "NE",
+        "subject": "entity_4166089"
+      },
+      {
+        "object": "entity_9719748",
+        "relation": "NE",
+        "subject": "entity_4473356"
+      }
+    ],
+    "query": [
+      "entity_4077657",
+      "entity_4473356"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_8392845",
+      "entity_4344118",
+      "entity_3868942",
+      "entity_2313959",
+      "entity_3907712",
+      "entity_4449372"
+    ],
+    "facts": [
+      {
+        "object": "entity_3907712",
+        "relation": "NE",
+        "subject": "entity_4344118"
+      },
+      {
+        "object": "entity_4344118",
+        "relation": "O",
+        "subject": "entity_3868942"
+      },
+      {
+        "object": "entity_4344118",
+        "relation": "E",
+        "subject": "entity_4449372"
+      },
+      {
+        "object": "entity_8392845",
+        "relation": "SW",
+        "subject": "entity_3868942"
+      },
+      {
+        "object": "entity_2313959",
+        "relation": "S",
+        "subject": "entity_4344118"
+      }
+    ],
+    "query": [
+      "entity_8392845",
+      "entity_2313959"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_1067888",
+      "entity_4692988",
+      "entity_381173",
+      "entity_1650668",
+      "entity_9092091",
+      "entity_5742782"
+    ],
+    "facts": [
+      {
+        "object": "entity_1067888",
+        "relation": "S",
+        "subject": "entity_4692988"
+      },
+      {
+        "object": "entity_5742782",
+        "relation": "O",
+        "subject": "entity_381173"
+      },
+      {
+        "object": "entity_381173",
+        "relation": "NE",
+        "subject": "entity_1067888"
+      },
+      {
+        "object": "entity_1067888",
+        "relation": "NW",
+        "subject": "entity_9092091"
+      },
+      {
+        "object": "entity_1067888",
+        "relation": "O",
+        "subject": "entity_1650668"
+      }
+    ],
+    "query": [
+      "entity_5742782",
+      "entity_9092091"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_2043724",
+      "entity_3201847",
+      "entity_9430611",
+      "entity_933455",
+      "entity_5279102"
+    ],
+    "facts": [
+      {
+        "object": "entity_933455",
+        "relation": "SE",
+        "subject": "entity_2043724"
+      },
+      {
+        "object": "entity_9430611",
+        "relation": "NE",
+        "subject": "entity_933455"
+      },
+      {
+        "object": "entity_9430611",
+        "relation": "E",
+        "subject": "entity_5279102"
+      },
+      {
+        "object": "entity_2043724",
+        "relation": "N",
+        "subject": "entity_3201847"
+      }
+    ],
+    "query": [
+      "entity_9430611",
+      "entity_2043724"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_9998660",
+      "entity_8623103",
+      "entity_1613095",
+      "entity_4066189",
+      "entity_9730886",
+      "entity_7031466",
+      "entity_1764047"
+    ],
+    "facts": [
+      {
+        "object": "entity_9998660",
+        "relation": "SE",
+        "subject": "entity_7031466"
+      },
+      {
+        "object": "entity_4066189",
+        "relation": "E",
+        "subject": "entity_9998660"
+      },
+      {
+        "object": "entity_4066189",
+        "relation": "O",
+        "subject": "entity_8623103"
+      },
+      {
+        "object": "entity_1613095",
+        "relation": "NE",
+        "subject": "entity_1764047"
+      },
+      {
+        "object": "entity_1613095",
+        "relation": "SW",
+        "subject": "entity_8623103"
+      },
+      {
+        "object": "entity_7031466",
+        "relation": "SW",
+        "subject": "entity_9730886"
+      }
+    ],
+    "query": [
+      "entity_1613095",
+      "entity_7031466"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_2174163",
+      "entity_1533095",
+      "entity_6326264",
+      "entity_4178310"
+    ],
+    "facts": [
+      {
+        "object": "entity_2174163",
+        "relation": "S",
+        "subject": "entity_4178310"
+      },
+      {
+        "object": "entity_1533095",
+        "relation": "S",
+        "subject": "entity_2174163"
+      },
+      {
+        "object": "entity_4178310",
+        "relation": "NE",
+        "subject": "entity_6326264"
+      }
+    ],
+    "query": [
+      "entity_4178310",
+      "entity_2174163"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_5395034",
+      "entity_2334737",
+      "entity_7840433",
+      "entity_7285455",
+      "entity_8560040",
+      "entity_4291657",
+      "entity_5539495"
+    ],
+    "facts": [
+      {
+        "object": "entity_8560040",
+        "relation": "SW",
+        "subject": "entity_7285455"
+      },
+      {
+        "object": "entity_2334737",
+        "relation": "SW",
+        "subject": "entity_4291657"
+      },
+      {
+        "object": "entity_5539495",
+        "relation": "NW",
+        "subject": "entity_7285455"
+      },
+      {
+        "object": "entity_2334737",
+        "relation": "SE",
+        "subject": "entity_7840433"
+      },
+      {
+        "object": "entity_2334737",
+        "relation": "S",
+        "subject": "entity_5395034"
+      },
+      {
+        "object": "entity_4291657",
+        "relation": "SW",
+        "subject": "entity_8560040"
+      }
+    ],
+    "query": [
+      "entity_7840433",
+      "entity_7285455"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_3565720",
+      "entity_9952039",
+      "entity_2569990",
+      "entity_4991736",
+      "entity_5235151"
+    ],
+    "facts": [
+      {
+        "object": "entity_4991736",
+        "relation": "SE",
+        "subject": "entity_2569990"
+      },
+      {
+        "object": "entity_2569990",
+        "relation": "E",
+        "subject": "entity_9952039"
+      },
+      {
+        "object": "entity_2569990",
+        "relation": "NE",
+        "subject": "entity_5235151"
+      },
+      {
+        "object": "entity_3565720",
+        "relation": "S",
+        "subject": "entity_5235151"
+      }
+    ],
+    "query": [
+      "entity_4991736",
+      "entity_5235151"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_3851464",
+      "entity_960754",
+      "entity_8781576",
+      "entity_6894873",
+      "entity_4830719",
+      "entity_1064711",
+      "entity_4235206"
+    ],
+    "facts": [
+      {
+        "object": "entity_1064711",
+        "relation": "NE",
+        "subject": "entity_6894873"
+      },
+      {
+        "object": "entity_4830719",
+        "relation": "N",
+        "subject": "entity_8781576"
+      },
+      {
+        "object": "entity_1064711",
+        "relation": "O",
+        "subject": "entity_8781576"
+      },
+      {
+        "object": "entity_6894873",
+        "relation": "NW",
+        "subject": "entity_3851464"
+      },
+      {
+        "object": "entity_4235206",
+        "relation": "NW",
+        "subject": "entity_8781576"
+      },
+      {
+        "object": "entity_960754",
+        "relation": "SE",
+        "subject": "entity_8781576"
+      }
+    ],
+    "query": [
+      "entity_4830719",
+      "entity_3851464"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_5142726",
+      "entity_8805520",
+      "entity_656434",
+      "entity_1654430",
+      "entity_477184",
+      "entity_5941451",
+      "entity_4119880"
+    ],
+    "facts": [
+      {
+        "object": "entity_477184",
+        "relation": "N",
+        "subject": "entity_1654430"
+      },
+      {
+        "object": "entity_4119880",
+        "relation": "NE",
+        "subject": "entity_477184"
+      },
+      {
+        "object": "entity_4119880",
+        "relation": "N",
+        "subject": "entity_8805520"
+      },
+      {
+        "object": "entity_8805520",
+        "relation": "W",
+        "subject": "entity_5142726"
+      },
+      {
+        "object": "entity_5941451",
+        "relation": "N",
+        "subject": "entity_656434"
+      },
+      {
+        "object": "entity_5941451",
+        "relation": "S",
+        "subject": "entity_477184"
+      }
+    ],
+    "query": [
+      "entity_5941451",
+      "entity_5142726"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_3137907",
+      "entity_9573144",
+      "entity_5657440",
+      "entity_1840838",
+      "entity_9059788",
+      "entity_3590093",
+      "entity_7387660"
+    ],
+    "facts": [
+      {
+        "object": "entity_1840838",
+        "relation": "W",
+        "subject": "entity_9059788"
+      },
+      {
+        "object": "entity_5657440",
+        "relation": "SW",
+        "subject": "entity_9059788"
+      },
+      {
+        "object": "entity_5657440",
+        "relation": "E",
+        "subject": "entity_7387660"
+      },
+      {
+        "object": "entity_1840838",
+        "relation": "N",
+        "subject": "entity_9573144"
+      },
+      {
+        "object": "entity_3137907",
+        "relation": "SE",
+        "subject": "entity_9573144"
+      },
+      {
+        "object": "entity_9059788",
+        "relation": "N",
+        "subject": "entity_3590093"
+      }
+    ],
+    "query": [
+      "entity_3137907",
+      "entity_5657440"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_1556563",
+      "entity_1168912",
+      "entity_6962867",
+      "entity_9229877",
+      "entity_4359782",
+      "entity_1277233"
+    ],
+    "facts": [
+      {
+        "object": "entity_1168912",
+        "relation": "NE",
+        "subject": "entity_6962867"
+      },
+      {
+        "object": "entity_4359782",
+        "relation": "SW",
+        "subject": "entity_9229877"
+      },
+      {
+        "object": "entity_1556563",
+        "relation": "E",
+        "subject": "entity_6962867"
+      },
+      {
+        "object": "entity_9229877",
+        "relation": "W",
+        "subject": "entity_1556563"
+      },
+      {
+        "object": "entity_1277233",
+        "relation": "NW",
+        "subject": "entity_9229877"
+      }
+    ],
+    "query": [
+      "entity_6962867",
+      "entity_1277233"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_8110973",
+      "entity_2487509",
+      "entity_7219814",
+      "entity_5038529"
+    ],
+    "facts": [
+      {
+        "object": "entity_8110973",
+        "relation": "NW",
+        "subject": "entity_7219814"
+      },
+      {
+        "object": "entity_7219814",
+        "relation": "SE",
+        "subject": "entity_5038529"
+      },
+      {
+        "object": "entity_7219814",
+        "relation": "N",
+        "subject": "entity_2487509"
+      }
+    ],
+    "query": [
+      "entity_8110973",
+      "entity_7219814"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_4523932",
+      "entity_1990979",
+      "entity_128012",
+      "entity_6822538",
+      "entity_4884880",
+      "entity_1992243"
+    ],
+    "facts": [
+      {
+        "object": "entity_1992243",
+        "relation": "SW",
+        "subject": "entity_128012"
+      },
+      {
+        "object": "entity_6822538",
+        "relation": "NE",
+        "subject": "entity_128012"
+      },
+      {
+        "object": "entity_4884880",
+        "relation": "NW",
+        "subject": "entity_6822538"
+      },
+      {
+        "object": "entity_4523932",
+        "relation": "S",
+        "subject": "entity_6822538"
+      },
+      {
+        "object": "entity_1990979",
+        "relation": "E",
+        "subject": "entity_4884880"
+      }
+    ],
+    "query": [
+      "entity_4884880",
+      "entity_1992243"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_9847559",
+      "entity_5966929",
+      "entity_8908665",
+      "entity_5041235",
+      "entity_7532169",
+      "entity_7462795"
+    ],
+    "facts": [
+      {
+        "object": "entity_7532169",
+        "relation": "O",
+        "subject": "entity_9847559"
+      },
+      {
+        "object": "entity_5041235",
+        "relation": "O",
+        "subject": "entity_8908665"
+      },
+      {
+        "object": "entity_5966929",
+        "relation": "O",
+        "subject": "entity_7532169"
+      },
+      {
+        "object": "entity_7532169",
+        "relation": "S",
+        "subject": "entity_7462795"
+      },
+      {
+        "object": "entity_5966929",
+        "relation": "NW",
+        "subject": "entity_8908665"
+      }
+    ],
+    "query": [
+      "entity_5041235",
+      "entity_7532169"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_4735303",
+      "entity_5307524",
+      "entity_3449419",
+      "entity_274295",
+      "entity_3425083",
+      "entity_9948521"
+    ],
+    "facts": [
+      {
+        "object": "entity_274295",
+        "relation": "N",
+        "subject": "entity_3449419"
+      },
+      {
+        "object": "entity_3425083",
+        "relation": "SE",
+        "subject": "entity_274295"
+      },
+      {
+        "object": "entity_274295",
+        "relation": "E",
+        "subject": "entity_5307524"
+      },
+      {
+        "object": "entity_4735303",
+        "relation": "SW",
+        "subject": "entity_9948521"
+      },
+      {
+        "object": "entity_4735303",
+        "relation": "NW",
+        "subject": "entity_5307524"
+      }
+    ],
+    "query": [
+      "entity_3449419",
+      "entity_4735303"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_3843871",
+      "entity_7107005",
+      "entity_1257831",
+      "entity_8060728",
+      "entity_7086278",
+      "entity_7305097"
+    ],
+    "facts": [
+      {
+        "object": "entity_3843871",
+        "relation": "E",
+        "subject": "entity_7107005"
+      },
+      {
+        "object": "entity_1257831",
+        "relation": "E",
+        "subject": "entity_7107005"
+      },
+      {
+        "object": "entity_7305097",
+        "relation": "O",
+        "subject": "entity_7107005"
+      },
+      {
+        "object": "entity_3843871",
+        "relation": "NE",
+        "subject": "entity_7086278"
+      },
+      {
+        "object": "entity_8060728",
+        "relation": "E",
+        "subject": "entity_7305097"
+      }
+    ],
+    "query": [
+      "entity_3843871",
+      "entity_8060728"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_3257017",
+      "entity_922551",
+      "entity_4829875",
+      "entity_7833226",
+      "entity_6882699"
+    ],
+    "facts": [
+      {
+        "object": "entity_4829875",
+        "relation": "SE",
+        "subject": "entity_7833226"
+      },
+      {
+        "object": "entity_3257017",
+        "relation": "NE",
+        "subject": "entity_7833226"
+      },
+      {
+        "object": "entity_3257017",
+        "relation": "O",
+        "subject": "entity_6882699"
+      },
+      {
+        "object": "entity_7833226",
+        "relation": "SW",
+        "subject": "entity_922551"
+      }
+    ],
+    "query": [
+      "entity_3257017",
+      "entity_922551"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_5051686",
+      "entity_5205378",
+      "entity_8858243",
+      "entity_464274",
+      "entity_1671374"
+    ],
+    "facts": [
+      {
+        "object": "entity_464274",
+        "relation": "NW",
+        "subject": "entity_5205378"
+      },
+      {
+        "object": "entity_5051686",
+        "relation": "SE",
+        "subject": "entity_5205378"
+      },
+      {
+        "object": "entity_5205378",
+        "relation": "S",
+        "subject": "entity_8858243"
+      },
+      {
+        "object": "entity_1671374",
+        "relation": "NE",
+        "subject": "entity_5205378"
+      }
+    ],
+    "query": [
+      "entity_8858243",
+      "entity_1671374"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_6550218",
+      "entity_733064",
+      "entity_6409810",
+      "entity_3803653",
+      "entity_8193302"
+    ],
+    "facts": [
+      {
+        "object": "entity_8193302",
+        "relation": "SW",
+        "subject": "entity_6409810"
+      },
+      {
+        "object": "entity_6409810",
+        "relation": "N",
+        "subject": "entity_733064"
+      },
+      {
+        "object": "entity_6550218",
+        "relation": "W",
+        "subject": "entity_6409810"
+      },
+      {
+        "object": "entity_733064",
+        "relation": "O",
+        "subject": "entity_3803653"
+      }
+    ],
+    "query": [
+      "entity_6550218",
+      "entity_733064"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_2166877",
+      "entity_9818903",
+      "entity_3640742",
+      "entity_5269805"
+    ],
+    "facts": [
+      {
+        "object": "entity_3640742",
+        "relation": "N",
+        "subject": "entity_2166877"
+      },
+      {
+        "object": "entity_3640742",
+        "relation": "SW",
+        "subject": "entity_9818903"
+      },
+      {
+        "object": "entity_3640742",
+        "relation": "SE",
+        "subject": "entity_5269805"
+      }
+    ],
+    "query": [
+      "entity_5269805",
+      "entity_3640742"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_7961662",
+      "entity_5981697",
+      "entity_9638576",
+      "entity_9180287",
+      "entity_1255639",
+      "entity_3316885",
+      "entity_9543380"
+    ],
+    "facts": [
+      {
+        "object": "entity_9180287",
+        "relation": "W",
+        "subject": "entity_7961662"
+      },
+      {
+        "object": "entity_3316885",
+        "relation": "NW",
+        "subject": "entity_1255639"
+      },
+      {
+        "object": "entity_9543380",
+        "relation": "S",
+        "subject": "entity_9638576"
+      },
+      {
+        "object": "entity_3316885",
+        "relation": "SE",
+        "subject": "entity_5981697"
+      },
+      {
+        "object": "entity_5981697",
+        "relation": "SE",
+        "subject": "entity_9180287"
+      },
+      {
+        "object": "entity_7961662",
+        "relation": "S",
+        "subject": "entity_9543380"
+      }
+    ],
+    "query": [
+      "entity_3316885",
+      "entity_9543380"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_3076588",
+      "entity_1405265",
+      "entity_7009280",
+      "entity_679449",
+      "entity_6615403",
+      "entity_6863300",
+      "entity_5768653"
+    ],
+    "facts": [
+      {
+        "object": "entity_5768653",
+        "relation": "NE",
+        "subject": "entity_1405265"
+      },
+      {
+        "object": "entity_679449",
+        "relation": "E",
+        "subject": "entity_6863300"
+      },
+      {
+        "object": "entity_6863300",
+        "relation": "E",
+        "subject": "entity_5768653"
+      },
+      {
+        "object": "entity_679449",
+        "relation": "E",
+        "subject": "entity_7009280"
+      },
+      {
+        "object": "entity_6615403",
+        "relation": "SE",
+        "subject": "entity_7009280"
+      },
+      {
+        "object": "entity_679449",
+        "relation": "O",
+        "subject": "entity_3076588"
+      }
+    ],
+    "query": [
+      "entity_1405265",
+      "entity_7009280"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_466050",
+      "entity_6845168",
+      "entity_1677268",
+      "entity_2334587",
+      "entity_1222432",
+      "entity_1823511"
+    ],
+    "facts": [
+      {
+        "object": "entity_466050",
+        "relation": "S",
+        "subject": "entity_1823511"
+      },
+      {
+        "object": "entity_1677268",
+        "relation": "E",
+        "subject": "entity_2334587"
+      },
+      {
+        "object": "entity_1677268",
+        "relation": "SE",
+        "subject": "entity_1222432"
+      },
+      {
+        "object": "entity_6845168",
+        "relation": "E",
+        "subject": "entity_1823511"
+      },
+      {
+        "object": "entity_1677268",
+        "relation": "NW",
+        "subject": "entity_1823511"
+      }
+    ],
+    "query": [
+      "entity_1222432",
+      "entity_6845168"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_7841899",
+      "entity_2251021",
+      "entity_5899436",
+      "entity_9472700",
+      "entity_1794813",
+      "entity_474663",
+      "entity_1435046"
+    ],
+    "facts": [
+      {
+        "object": "entity_7841899",
+        "relation": "NE",
+        "subject": "entity_9472700"
+      },
+      {
+        "object": "entity_5899436",
+        "relation": "NW",
+        "subject": "entity_474663"
+      },
+      {
+        "object": "entity_1435046",
+        "relation": "SE",
+        "subject": "entity_1794813"
+      },
+      {
+        "object": "entity_1435046",
+        "relation": "E",
+        "subject": "entity_7841899"
+      },
+      {
+        "object": "entity_5899436",
+        "relation": "O",
+        "subject": "entity_9472700"
+      },
+      {
+        "object": "entity_9472700",
+        "relation": "SE",
+        "subject": "entity_2251021"
+      }
+    ],
+    "query": [
+      "entity_5899436",
+      "entity_1794813"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_6225776",
+      "entity_3191859",
+      "entity_3499940",
+      "entity_9403",
+      "entity_1432655"
+    ],
+    "facts": [
+      {
+        "object": "entity_9403",
+        "relation": "E",
+        "subject": "entity_1432655"
+      },
+      {
+        "object": "entity_3499940",
+        "relation": "SE",
+        "subject": "entity_9403"
+      },
+      {
+        "object": "entity_3191859",
+        "relation": "O",
+        "subject": "entity_1432655"
+      },
+      {
+        "object": "entity_6225776",
+        "relation": "W",
+        "subject": "entity_1432655"
+      }
+    ],
+    "query": [
+      "entity_3191859",
+      "entity_9403"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_4772998",
+      "entity_9921629",
+      "entity_1970226",
+      "entity_8153619",
+      "entity_8415152",
+      "entity_1810228"
+    ],
+    "facts": [
+      {
+        "object": "entity_9921629",
+        "relation": "NE",
+        "subject": "entity_4772998"
+      },
+      {
+        "object": "entity_9921629",
+        "relation": "O",
+        "subject": "entity_8415152"
+      },
+      {
+        "object": "entity_8153619",
+        "relation": "SE",
+        "subject": "entity_1970226"
+      },
+      {
+        "object": "entity_8415152",
+        "relation": "E",
+        "subject": "entity_8153619"
+      },
+      {
+        "object": "entity_8153619",
+        "relation": "SE",
+        "subject": "entity_1810228"
+      }
+    ],
+    "query": [
+      "entity_9921629",
+      "entity_1810228"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_5583717",
+      "entity_714156",
+      "entity_6893986",
+      "entity_7215495",
+      "entity_8039839",
+      "entity_1613741",
+      "entity_888506"
+    ],
+    "facts": [
+      {
+        "object": "entity_714156",
+        "relation": "E",
+        "subject": "entity_8039839"
+      },
+      {
+        "object": "entity_714156",
+        "relation": "W",
+        "subject": "entity_7215495"
+      },
+      {
+        "object": "entity_888506",
+        "relation": "SE",
+        "subject": "entity_6893986"
+      },
+      {
+        "object": "entity_714156",
+        "relation": "N",
+        "subject": "entity_5583717"
+      },
+      {
+        "object": "entity_714156",
+        "relation": "SW",
+        "subject": "entity_1613741"
+      },
+      {
+        "object": "entity_888506",
+        "relation": "W",
+        "subject": "entity_1613741"
+      }
+    ],
+    "query": [
+      "entity_6893986",
+      "entity_7215495"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_3928176",
+      "entity_2772271",
+      "entity_1664698",
+      "entity_6613764",
+      "entity_8118610",
+      "entity_67709",
+      "entity_5911362"
+    ],
+    "facts": [
+      {
+        "object": "entity_8118610",
+        "relation": "N",
+        "subject": "entity_5911362"
+      },
+      {
+        "object": "entity_67709",
+        "relation": "SW",
+        "subject": "entity_3928176"
+      },
+      {
+        "object": "entity_5911362",
+        "relation": "O",
+        "subject": "entity_67709"
+      },
+      {
+        "object": "entity_2772271",
+        "relation": "S",
+        "subject": "entity_1664698"
+      },
+      {
+        "object": "entity_6613764",
+        "relation": "NW",
+        "subject": "entity_2772271"
+      },
+      {
+        "object": "entity_6613764",
+        "relation": "NW",
+        "subject": "entity_67709"
+      }
+    ],
+    "query": [
+      "entity_8118610",
+      "entity_2772271"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_6450166",
+      "entity_7151617",
+      "entity_5553185",
+      "entity_5767331",
+      "entity_7289538",
+      "entity_3538089"
+    ],
+    "facts": [
+      {
+        "object": "entity_3538089",
+        "relation": "NW",
+        "subject": "entity_5553185"
+      },
+      {
+        "object": "entity_7151617",
+        "relation": "O",
+        "subject": "entity_5767331"
+      },
+      {
+        "object": "entity_7289538",
+        "relation": "SW",
+        "subject": "entity_5553185"
+      },
+      {
+        "object": "entity_7289538",
+        "relation": "E",
+        "subject": "entity_7151617"
+      },
+      {
+        "object": "entity_6450166",
+        "relation": "SE",
+        "subject": "entity_5553185"
+      }
+    ],
+    "query": [
+      "entity_5553185",
+      "entity_5767331"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_2927780",
+      "entity_7361260",
+      "entity_6983241",
+      "entity_2495803",
+      "entity_2917895"
+    ],
+    "facts": [
+      {
+        "object": "entity_2927780",
+        "relation": "SE",
+        "subject": "entity_7361260"
+      },
+      {
+        "object": "entity_2927780",
+        "relation": "SW",
+        "subject": "entity_2495803"
+      },
+      {
+        "object": "entity_6983241",
+        "relation": "S",
+        "subject": "entity_2917895"
+      },
+      {
+        "object": "entity_2917895",
+        "relation": "NW",
+        "subject": "entity_7361260"
+      }
+    ],
+    "query": [
+      "entity_2927780",
+      "entity_2917895"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_2858974",
+      "entity_5913536",
+      "entity_6463432",
+      "entity_9019856",
+      "entity_3581423",
+      "entity_1047308"
+    ],
+    "facts": [
+      {
+        "object": "entity_1047308",
+        "relation": "E",
+        "subject": "entity_3581423"
+      },
+      {
+        "object": "entity_3581423",
+        "relation": "SE",
+        "subject": "entity_9019856"
+      },
+      {
+        "object": "entity_3581423",
+        "relation": "SE",
+        "subject": "entity_2858974"
+      },
+      {
+        "object": "entity_6463432",
+        "relation": "NW",
+        "subject": "entity_5913536"
+      },
+      {
+        "object": "entity_1047308",
+        "relation": "W",
+        "subject": "entity_6463432"
+      }
+    ],
+    "query": [
+      "entity_6463432",
+      "entity_2858974"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_5618763",
+      "entity_4212269",
+      "entity_4804591",
+      "entity_7054201",
+      "entity_1418022",
+      "entity_9279118"
+    ],
+    "facts": [
+      {
+        "object": "entity_1418022",
+        "relation": "NW",
+        "subject": "entity_9279118"
+      },
+      {
+        "object": "entity_1418022",
+        "relation": "NE",
+        "subject": "entity_7054201"
+      },
+      {
+        "object": "entity_5618763",
+        "relation": "NE",
+        "subject": "entity_1418022"
+      },
+      {
+        "object": "entity_9279118",
+        "relation": "O",
+        "subject": "entity_4212269"
+      },
+      {
+        "object": "entity_4804591",
+        "relation": "E",
+        "subject": "entity_7054201"
+      }
+    ],
+    "query": [
+      "entity_9279118",
+      "entity_4804591"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_8877009",
+      "entity_3080749",
+      "entity_9213644",
+      "entity_8128290",
+      "entity_2144476"
+    ],
+    "facts": [
+      {
+        "object": "entity_2144476",
+        "relation": "S",
+        "subject": "entity_9213644"
+      },
+      {
+        "object": "entity_3080749",
+        "relation": "S",
+        "subject": "entity_9213644"
+      },
+      {
+        "object": "entity_8128290",
+        "relation": "NE",
+        "subject": "entity_9213644"
+      },
+      {
+        "object": "entity_8877009",
+        "relation": "N",
+        "subject": "entity_3080749"
+      }
+    ],
+    "query": [
+      "entity_9213644",
+      "entity_8877009"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_5370551",
+      "entity_3434684",
+      "entity_5666236",
+      "entity_1253267",
+      "entity_7904020",
+      "entity_700890",
+      "entity_6195654"
+    ],
+    "facts": [
+      {
+        "object": "entity_7904020",
+        "relation": "S",
+        "subject": "entity_5370551"
+      },
+      {
+        "object": "entity_5666236",
+        "relation": "NE",
+        "subject": "entity_700890"
+      },
+      {
+        "object": "entity_3434684",
+        "relation": "NE",
+        "subject": "entity_1253267"
+      },
+      {
+        "object": "entity_5666236",
+        "relation": "O",
+        "subject": "entity_3434684"
+      },
+      {
+        "object": "entity_5370551",
+        "relation": "SE",
+        "subject": "entity_1253267"
+      },
+      {
+        "object": "entity_6195654",
+        "relation": "S",
+        "subject": "entity_3434684"
+      }
+    ],
+    "query": [
+      "entity_700890",
+      "entity_5370551"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_7072729",
+      "entity_3904448",
+      "entity_2895551",
+      "entity_4102632",
+      "entity_258868",
+      "entity_2940465"
+    ],
+    "facts": [
+      {
+        "object": "entity_7072729",
+        "relation": "NE",
+        "subject": "entity_2940465"
+      },
+      {
+        "object": "entity_4102632",
+        "relation": "O",
+        "subject": "entity_2940465"
+      },
+      {
+        "object": "entity_2940465",
+        "relation": "SW",
+        "subject": "entity_2895551"
+      },
+      {
+        "object": "entity_3904448",
+        "relation": "NE",
+        "subject": "entity_4102632"
+      },
+      {
+        "object": "entity_4102632",
+        "relation": "N",
+        "subject": "entity_258868"
+      }
+    ],
+    "query": [
+      "entity_7072729",
+      "entity_258868"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_6007472",
+      "entity_7854349",
+      "entity_4134520",
+      "entity_6944746"
+    ],
+    "facts": [
+      {
+        "object": "entity_4134520",
+        "relation": "O",
+        "subject": "entity_6007472"
+      },
+      {
+        "object": "entity_4134520",
+        "relation": "SW",
+        "subject": "entity_7854349"
+      },
+      {
+        "object": "entity_4134520",
+        "relation": "SE",
+        "subject": "entity_6944746"
+      }
+    ],
+    "query": [
+      "entity_6944746",
+      "entity_4134520"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_8767089",
+      "entity_5361925",
+      "entity_6531000",
+      "entity_682591",
+      "entity_9764178"
+    ],
+    "facts": [
+      {
+        "object": "entity_9764178",
+        "relation": "O",
+        "subject": "entity_6531000"
+      },
+      {
+        "object": "entity_8767089",
+        "relation": "NW",
+        "subject": "entity_682591"
+      },
+      {
+        "object": "entity_6531000",
+        "relation": "N",
+        "subject": "entity_8767089"
+      },
+      {
+        "object": "entity_5361925",
+        "relation": "W",
+        "subject": "entity_8767089"
+      }
+    ],
+    "query": [
+      "entity_6531000",
+      "entity_682591"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_8563825",
+      "entity_950086",
+      "entity_3070018",
+      "entity_8369138",
+      "entity_4387275",
+      "entity_4206498"
+    ],
+    "facts": [
+      {
+        "object": "entity_8369138",
+        "relation": "E",
+        "subject": "entity_8563825"
+      },
+      {
+        "object": "entity_8563825",
+        "relation": "O",
+        "subject": "entity_950086"
+      },
+      {
+        "object": "entity_950086",
+        "relation": "E",
+        "subject": "entity_4387275"
+      },
+      {
+        "object": "entity_4206498",
+        "relation": "SE",
+        "subject": "entity_8369138"
+      },
+      {
+        "object": "entity_8369138",
+        "relation": "SE",
+        "subject": "entity_3070018"
+      }
+    ],
+    "query": [
+      "entity_4387275",
+      "entity_8369138"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_7957899",
+      "entity_1190235",
+      "entity_2820566",
+      "entity_6463022",
+      "entity_3303875",
+      "entity_4919122",
+      "entity_334511"
+    ],
+    "facts": [
+      {
+        "object": "entity_4919122",
+        "relation": "E",
+        "subject": "entity_6463022"
+      },
+      {
+        "object": "entity_334511",
+        "relation": "SE",
+        "subject": "entity_3303875"
+      },
+      {
+        "object": "entity_3303875",
+        "relation": "N",
+        "subject": "entity_2820566"
+      },
+      {
+        "object": "entity_3303875",
+        "relation": "SW",
+        "subject": "entity_6463022"
+      },
+      {
+        "object": "entity_2820566",
+        "relation": "SW",
+        "subject": "entity_1190235"
+      },
+      {
+        "object": "entity_7957899",
+        "relation": "NW",
+        "subject": "entity_6463022"
+      }
+    ],
+    "query": [
+      "entity_1190235",
+      "entity_4919122"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_5477156",
+      "entity_8897298",
+      "entity_8455444",
+      "entity_6498188"
+    ],
+    "facts": [
+      {
+        "object": "entity_8897298",
+        "relation": "O",
+        "subject": "entity_6498188"
+      },
+      {
+        "object": "entity_5477156",
+        "relation": "NE",
+        "subject": "entity_6498188"
+      },
+      {
+        "object": "entity_8455444",
+        "relation": "W",
+        "subject": "entity_6498188"
+      }
+    ],
+    "query": [
+      "entity_6498188",
+      "entity_5477156"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_1802985",
+      "entity_9899009",
+      "entity_6026849",
+      "entity_17145",
+      "entity_4006709",
+      "entity_8673000",
+      "entity_59602"
+    ],
+    "facts": [
+      {
+        "object": "entity_4006709",
+        "relation": "SW",
+        "subject": "entity_8673000"
+      },
+      {
+        "object": "entity_6026849",
+        "relation": "N",
+        "subject": "entity_4006709"
+      },
+      {
+        "object": "entity_8673000",
+        "relation": "SE",
+        "subject": "entity_9899009"
+      },
+      {
+        "object": "entity_4006709",
+        "relation": "SE",
+        "subject": "entity_59602"
+      },
+      {
+        "object": "entity_17145",
+        "relation": "SW",
+        "subject": "entity_59602"
+      },
+      {
+        "object": "entity_1802985",
+        "relation": "W",
+        "subject": "entity_8673000"
+      }
+    ],
+    "query": [
+      "entity_1802985",
+      "entity_17145"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_8782085",
+      "entity_2813708",
+      "entity_4211752",
+      "entity_9037269",
+      "entity_2698072",
+      "entity_2537897",
+      "entity_7248395"
+    ],
+    "facts": [
+      {
+        "object": "entity_4211752",
+        "relation": "SE",
+        "subject": "entity_2537897"
+      },
+      {
+        "object": "entity_4211752",
+        "relation": "O",
+        "subject": "entity_2813708"
+      },
+      {
+        "object": "entity_4211752",
+        "relation": "NW",
+        "subject": "entity_7248395"
+      },
+      {
+        "object": "entity_4211752",
+        "relation": "N",
+        "subject": "entity_8782085"
+      },
+      {
+        "object": "entity_2813708",
+        "relation": "NE",
+        "subject": "entity_2698072"
+      },
+      {
+        "object": "entity_9037269",
+        "relation": "SE",
+        "subject": "entity_2698072"
+      }
+    ],
+    "query": [
+      "entity_8782085",
+      "entity_9037269"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_2254541",
+      "entity_38133",
+      "entity_9964902",
+      "entity_1706964",
+      "entity_4361160",
+      "entity_348680",
+      "entity_5211748"
+    ],
+    "facts": [
+      {
+        "object": "entity_5211748",
+        "relation": "SW",
+        "subject": "entity_9964902"
+      },
+      {
+        "object": "entity_9964902",
+        "relation": "SE",
+        "subject": "entity_348680"
+      },
+      {
+        "object": "entity_9964902",
+        "relation": "NE",
+        "subject": "entity_1706964"
+      },
+      {
+        "object": "entity_348680",
+        "relation": "NW",
+        "subject": "entity_4361160"
+      },
+      {
+        "object": "entity_2254541",
+        "relation": "SE",
+        "subject": "entity_9964902"
+      },
+      {
+        "object": "entity_38133",
+        "relation": "NW",
+        "subject": "entity_5211748"
+      }
+    ],
+    "query": [
+      "entity_4361160",
+      "entity_38133"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_4151011",
+      "entity_7652393",
+      "entity_2078813",
+      "entity_3955411"
+    ],
+    "facts": [
+      {
+        "object": "entity_3955411",
+        "relation": "E",
+        "subject": "entity_2078813"
+      },
+      {
+        "object": "entity_4151011",
+        "relation": "N",
+        "subject": "entity_2078813"
+      },
+      {
+        "object": "entity_7652393",
+        "relation": "N",
+        "subject": "entity_2078813"
+      }
+    ],
+    "query": [
+      "entity_7652393",
+      "entity_2078813"
+    ],
+    "version": "adiona-geometric-task-v1"
+  },
+  {
+    "entities": [
+      "entity_5742878",
+      "entity_7282254",
+      "entity_946464",
+      "entity_6702971"
+    ],
+    "facts": [
+      {
+        "object": "entity_946464",
+        "relation": "NE",
+        "subject": "entity_6702971"
+      },
+      {
+        "object": "entity_946464",
+        "relation": "SW",
+        "subject": "entity_7282254"
+      },
+      {
+        "object": "entity_5742878",
+        "relation": "N",
+        "subject": "entity_946464"
+      }
+    ],
+    "query": [
+      "entity_946464",
+      "entity_6702971"
+    ],
+    "version": "adiona-geometric-task-v1"
+  }
+]

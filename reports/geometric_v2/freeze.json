@@ -1,0 +1,22 @@
+{
+  "commit": "4a4a28966d0b5e8869039466e337f0066d795a93",
+  "engineering_control_sha256": "1fd6d35dc0fe967d1b87ac7134b83e0ce7a2f05bac9ab4302f2ee6ebda1d1174",
+  "external_preregistration": false,
+  "final_evaluation_accessed": false,
+  "frozen_at": "2026-09-23T16:43:24.639167+00:00",
+  "protocol_sha256": "2334f53443d653d14857f5426997e8e232b98fe5340622db5336904d95f670d5",
+  "source_sha256": {
+    "adiona/geometric/__init__.py": "b7d3a215ff7758e7c2bc0513375ad70cc9a09e08156c0a4f56d5debc925a5b4c",
+    "adiona/geometric/__main__.py": "391cfda46f60584754c5d4c2bee012b4aa1cb34b05331d1aa90076646517d009",
+    "adiona/geometric/adapter.py": "a8e6b0b340135568420ddb6eb7f2694779e9a40837a2f6bf593f072ed0396a8b",
+    "adiona/geometric/contracts.py": "32b2dc0274f1f9fd7d4b6414db3b313a637fde580d28eb19649662862eb679d3",
+    "adiona/geometric/data.py": "2e31d1030315a42a3e384347c28e3b71af941dc892a9db5faa245739307bc3a0",
+    "adiona/geometric/evaluation.py": "fe095c1fad15f56d32a69464d663fa067f54d8fc90577bcc12dfe04f0e7bb9dd",
+    "adiona/geometric/model.py": "d74c02f9efc1319843811fd28d22b9d3793b221780375016ce1ebcc09d59ffa3",
+    "adiona/geometric/training.py": "74c6a59b19ded548adc2a0a27f5ffbb74e3e7ffe0e6ee886c3a1b8c8450ff202",
+    "adiona/geometric_v2/__init__.py": "7bc8698cb2acc02931b781ee9c0042a4d48c8d1238a8bafb22fa86f076f577b3",
+    "adiona/geometric_v2/__main__.py": "720b8576261a28a95fe115bc0dd5a4dd74866dc6da4e619adaf7458167dc77db",
+    "adiona/geometric_v2/experiment.py": "28551cb72222a033b4b39f8dea0ceb6b3a9b98b6bf3223f915e23e7001b118f8",
+    "adiona/geometric_v2/model.py": "169bd53b03b3cc8305090156c069a4f8c66ce9661656e876935d8dffd73ec3ee"
+  }
+}

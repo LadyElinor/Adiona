@@ -1,0 +1,18 @@
+{
+  "checks": {
+    "all_checkpoint_hashes_match": true,
+    "all_recorded_model_digests_match": true,
+    "all_secondary_coverage_pair_and_invariance_counts_reproduced": true,
+    "all_thirty_objective_pairs_matched": true,
+    "all_three_hundred_raw_accuracy_counts_reproduced": true,
+    "decision_gate_reproduced": true,
+    "final_tasks_match_recorded_hash": true,
+    "primary_arithmetic_reproduced": true,
+    "protocol_matches_freeze": true,
+    "results_bind_training_manifest": true,
+    "sixty_training_and_scored_runs": true,
+    "source_matches_freeze": true
+  },
+  "passed": true,
+  "scope": "local deterministic audit; hashes are integrity bindings, not independent authentication"
+}

@@ -1,0 +1,57 @@
+{
+  "generated_at": "2026-09-23T16:56:39.673867+00:00",
+  "suites": [
+    {
+      "suite": "inherited kernel and contract suite",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-S",
+        "scripts/validate.py"
+      ],
+      "returncode": 0,
+      "tests_run": 110,
+      "passed": true,
+      "seconds": 0.8107696430015494,
+      "isolated_copy": true
+    },
+    {
+      "suite": "research_tests",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "research_tests",
+        "-v"
+      ],
+      "returncode": 0,
+      "tests_run": 17,
+      "passed": true,
+      "seconds": 2.1698122399993736
+    },
+    {
+      "suite": "research_tests_v2",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "research_tests_v2",
+        "-v"
+      ],
+      "returncode": 0,
+      "tests_run": 16,
+      "passed": true,
+      "seconds": 2.7738634180004738
+    }
+  ],
+  "tests_run": 143,
+  "frozen_v1_files": 70,
+  "modified_v1_files": [],
+  "passed": true,
+  "observed_github_ci": false,
+  "independent_governance_review": false,
+  "production_cleared": false
+}

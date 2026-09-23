@@ -1,0 +1,22 @@
+test_checkpoint_rejects_nonfinite_duplicate_and_oversized_values (test_geometric.GeometryTests.test_checkpoint_rejects_nonfinite_duplicate_and_oversized_values) ... ok
+test_checkpoint_roundtrip_and_tamper_rejection (test_geometric.GeometryTests.test_checkpoint_roundtrip_and_tamper_rejection) ... ok
+test_consistent_cycles_and_disconnected_irrelevant_component (test_geometric.GeometryTests.test_consistent_cycles_and_disconnected_irrelevant_component) ... ok
+test_contradictory_cycle_abstains (test_geometric.GeometryTests.test_contradictory_cycle_abstains) ... ok
+test_counterfactual_changes_exactly_one_fact_and_answer (test_geometric.GeometryTests.test_counterfactual_changes_exactly_one_fact_and_answer) ... ok
+test_diagonal_and_zero_relations (test_geometric.GeometryTests.test_diagonal_and_zero_relations) ... ok
+test_disconnected_abstains_even_with_zero_confidence_threshold (test_geometric.GeometryTests.test_disconnected_abstains_even_with_zero_confidence_threshold) ... ok
+test_geometric_objective_has_nonzero_finite_embedding_gradient (test_geometric.GeometryTests.test_geometric_objective_has_nonzero_finite_embedding_gradient) ... ok
+test_geometry_gradient_agrees_with_finite_difference (test_geometric.GeometryTests.test_geometry_gradient_agrees_with_finite_difference) ... ok
+test_gram_loss_rotation_invariant_but_detects_collapsed_geometry (test_geometric.GeometryTests.test_gram_loss_rotation_invariant_but_detects_collapsed_geometry) ... ok
+test_invalid_threshold_and_dimension_rejected (test_geometric.GeometryTests.test_invalid_threshold_and_dimension_rejected) ... ok
+test_mixed_sizes_padding_does_not_change_predictions (test_geometric.GeometryTests.test_mixed_sizes_padding_does_not_change_predictions) ... ok
+test_model_does_not_call_oracle (test_geometric.GeometryTests.test_model_does_not_call_oracle) ... ok
+test_node_names_and_order_do_not_change_forward (test_geometric.GeometryTests.test_node_names_and_order_do_not_change_forward) ... ok
+test_shipped_checkpoint_predicts_demo_without_training (test_geometric.GeometryTests.test_shipped_checkpoint_predicts_demo_without_training) ... ok
+test_two_step_reasoning_and_query_inverse (test_geometric.GeometryTests.test_two_step_reasoning_and_query_inverse) ... ok
+test_untrained_model_is_not_secretly_exact_solver (test_geometric.GeometryTests.test_untrained_model_is_not_secretly_exact_solver) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.468s
+
+OK
