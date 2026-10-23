@@ -119,3 +119,15 @@ those external controls are configured.
 
 **License:** pending an explicit owner decision. No third-party repository code
 or manuscript has been relicensed by this initialization.
+
+## Review freshness hardening
+
+The latest registered decision for an exact action supersedes older warrants and
+capabilities, including reviews registered in the same second. Cross-role
+assessor trust domains and current authorizer separation are checked at the
+execution boundary. Historical decisions remain available; a later ALLOW is not
+proof that prior harm or disagreement has been resolved. See
+[Architecture](docs/ARCHITECTURE.md#decision-memory) for sequencing, legacy-warrant
+compatibility and the distinction between signed assessments and registered
+decisions. No external execution adapter or additional operational authority is
+introduced.

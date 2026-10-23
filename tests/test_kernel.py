@@ -530,3 +530,163 @@ class KernelTests(unittest.TestCase):
         self.assertEqual(d.body()["predictions"], ["counter should equal one"])
         self.assertEqual(d.body()["review_triggers"], ["counter differs"])
         self.assertEqual(d.body()["affected_parties"], ["worker"])
+
+    def test_cross_role_assessors_cannot_share_trust_domain(self):
+        principal, key = self.keys._entries["evidence"]
+        self.keys._entries["evidence"] = (Principal(principal.role, "fixture:norms"), key)
+        a = self.action()
+        d = self.decision(a)
+        self.assertEqual(d.body()["decision"], "DENY")
+        with self.assertRaises(Rejected):
+            self.k.authorize(self.c["authorizer"], a, d, "root-grant")
+        self.assertEqual(self.k.snapshot()["revision"], 0)
+
+    def test_human_review_cannot_share_assessor_domain(self):
+        principal, key = self.keys._entries["human"]
+        self.keys._entries["human"] = (Principal(principal.role, "fixture:evidence"), key)
+        a = self.action()
+        review = self.k.assess(self.c["human"], a, "human_review", "PASS",
+                               evidence_refs=[digest({})], reason="fixture review")
+        for evidence in (self.assessments(a) + [review], [review] + self.assessments(a)):
+            self.assertEqual(self.decision(a, evidence).body()["decision"], "DENY")
+
+    def test_assessor_separation_rechecked_at_commit(self):
+        a = self.action()
+        cap = self.capability(a)
+        principal, key = self.keys._entries["evidence"]
+        self.keys._entries["evidence"] = (Principal(principal.role, "fixture:norms"), key)
+        with self.assertRaises(Rejected):
+            self.commit(a, cap)
+        self.assertEqual(self.k.snapshot()["revision"], 0)
+
+    def test_authorizer_separation_rechecked_at_commit(self):
+        a = self.action()
+        cap = self.capability(a)
+        principal, key = self.keys._entries["authorizer"]
+        self.keys._entries["authorizer"] = (Principal(principal.role, "fixture:norms"), key)
+        with self.assertRaises(Rejected):
+            self.commit(a, cap)
+        self.assertEqual(self.k.snapshot()["revision"], 0)
+
+    def test_new_denial_invalidates_old_capability_without_spending(self):
+        a = self.action()
+        cap = self.capability(a)
+        self.now += 1
+        self.assertEqual(self.decision(a, self.assessments(a, verdicts={"duties": "FAIL"})).body()["decision"], "DENY")
+        before = self.k.snapshot()
+        with self.assertRaisesRegex(Rejected, "superseded"):
+            self.commit(a, cap)
+        self.assertEqual(self.k.snapshot(), before)
+        with closing(sqlite3.connect(self.path)) as db:
+            self.assertEqual(db.execute("SELECT consumed FROM capabilities").fetchone()[0], 0)
+            self.assertEqual(db.execute("SELECT uses FROM grants").fetchone()[0], 0)
+        self.assertEqual(self.count("decisions"), 2)
+        self.k.verify_history()
+
+    def test_new_uncertainty_invalidates_old_warrant_before_authorization(self):
+        a = self.action()
+        old = self.decision(a)
+        self.assertEqual(self.decision(a, []).body()["decision"], "REQUIRE_EVIDENCE")
+        with self.assertRaisesRegex(Rejected, "superseded"):
+            self.k.authorize(self.c["authorizer"], a, old, "root-grant")
+        self.assertEqual(self.count("capabilities"), 0)
+
+    def test_same_second_allow_deny_allow_never_revives_old_capability(self):
+        a = self.action()
+        old = self.decision(a)
+        cap = self.k.authorize(self.c["authorizer"], a, old, "root-grant")
+        denied = self.decision(a, self.assessments(a, verdicts={"rights": "FAIL"}))
+        fresh = self.decision(a)
+        self.assertEqual(old.body()["issued_at"], fresh.body()["issued_at"])
+        self.assertLess(old.body()["decision_sequence"], denied.body()["decision_sequence"])
+        self.assertLess(denied.body()["decision_sequence"], fresh.body()["decision_sequence"])
+        self.assertNotEqual(old, fresh)
+        with self.assertRaisesRegex(Rejected, "superseded"):
+            self.commit(a, cap)
+        self.assertEqual(self.count("decisions"), 3)
+        self.commit(a, self.k.authorize(self.c["authorizer"], a, fresh, "root-grant"))
+        self.k.verify_history()
+
+    def test_new_allow_also_supersedes_old_allow(self):
+        a = self.action()
+        old = self.decision(a)
+        fresh = self.decision(a)
+        with self.assertRaisesRegex(Rejected, "superseded"):
+            self.k.authorize(self.c["authorizer"], a, old, "root-grant")
+        self.commit(a, self.k.authorize(self.c["authorizer"], a, fresh, "root-grant"))
+
+    def test_other_action_decision_does_not_supersede(self):
+        a = self.action()
+        cap = self.capability(a)
+        self.decision(self.action(2), [])
+        self.commit(a, cap)
+
+    def test_supersession_survives_kernel_reopen(self):
+        a = self.action()
+        cap = self.capability(a)
+        self.decision(a, [])
+        reopened = Kernel(self.path, self.keys, clock=lambda: self.now)
+        with self.assertRaisesRegex(Rejected, "superseded"):
+            reopened.commit(self.c["executor"], a, cap)
+
+    def test_failed_decision_receipt_does_not_supersede(self):
+        a = self.action()
+        cap = self.capability(a)
+        original = self.k._event
+        def fail(*args, **kwargs):
+            raise RuntimeError("injected receipt storage failure")
+        self.k._event = fail
+        try:
+            with self.assertRaises(RuntimeError):
+                self.decision(a, [])
+        finally:
+            self.k._event = original
+        self.assertEqual(self.count("decisions"), 1)
+        self.commit(a, cap)
+
+    def test_non_ascii_authentication_tag_records_denial(self):
+        a = self.action()
+        evidence = self.assessments(a)
+        evidence[0] = replace(evidence[0], mac="é" * 64)
+        self.assertEqual(self.decision(a, evidence).body()["decision"], "DENY")
+        self.assertEqual(self.count("decisions"), 1)
+        self.assertEqual(self.k.snapshot()["revision"], 0)
+
+    def test_non_text_assessment_facet_records_denial(self):
+        a = self.action()
+        for malformed in ([], {}, None, 1):
+            with self.subTest(facet=malformed):
+                evidence = self.assessments(a)
+                body = evidence[0].body()
+                body["facet"] = malformed
+                evidence[0] = self.keys.sign(self.c["norms"], "assessment", body)
+                self.assertEqual(self.decision(a, evidence).body()["decision"], "DENY")
+        self.assertEqual(self.k.snapshot()["revision"], 0)
+
+    def test_same_second_denial_invalidates_capability(self):
+        a = self.action()
+        cap = self.capability(a)
+        denied = self.decision(a, self.assessments(a, verdicts={"duties": "FAIL"}))
+        self.assertEqual(denied.body()["issued_at"], cap.body()["issued_at"])
+        with self.assertRaisesRegex(Rejected, "superseded"):
+            self.commit(a, cap)
+        self.assertEqual(self.k.snapshot()["revision"], 0)
+
+    def test_legacy_warrant_without_sequence_fails_closed(self):
+        a = self.action()
+        body = self.decision(a).body()
+        del body["decision_sequence"]
+        legacy = self.keys.sign(self.c["decider"], "decision_warrant", body)
+        # Simulate a persisted pre-hardening decision using trusted fixture access.
+        with closing(sqlite3.connect(self.path)) as db, db:
+            db.execute("INSERT INTO decisions VALUES (?,?)", (digest(legacy.to_dict()), canonical(legacy.to_dict())))
+        with self.assertRaises(Rejected):
+            self.k.authorize(self.c["authorizer"], a, legacy, "root-grant")
+        self.assertEqual(self.count("capabilities"), 0)
+
+    def test_unregistered_assessment_is_not_decision_supersession(self):
+        a = self.action()
+        cap = self.capability(a)
+        self.k.assess(self.c["norms"], a, "duties", "FAIL",
+                      evidence_refs=[digest({})], reason="not submitted to decision gate")
+        self.commit(a, cap)  # Documented limit: signing alone is not registration.
