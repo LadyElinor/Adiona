@@ -240,11 +240,13 @@ class Kernel:
         self._preflight(db, action, s)
         a, p = action.body(), s["policy"]
         seen: dict[str, dict[str, Any]] = {}
+        assessors: list[tuple[str, str]] = []
         expiry = now + p["assessment_ttl_seconds"]
         for envelope in assessments:
             if not isinstance(envelope, Envelope):
                 raise Rejected("a producer name is not assessment evidence")
             facet = envelope.body().get("facet")
+            text(facet)
             role = FACET_ROLES.get(facet)
             if role is None:
                 raise Rejected("unknown assessment facet")
@@ -254,6 +256,11 @@ class Kernel:
             if facet in seen:
                 raise Rejected("duplicate assessment facet")
             self.keys.distinct(envelope.principal, a["actor"], a["beneficiary"])
+            # Duties and rights may share a normative assessor, not a different role.
+            for prior_role, prior_principal in assessors:
+                if role != prior_role:
+                    self.keys.distinct(envelope.principal, prior_principal)
+            assessors.append((role, envelope.principal))
             if b["action_digest"] != action.digest or b["policy_digest"] != s["policy_digest"]:
                 raise Rejected("assessment subject or policy mismatch")
             natural(b["issued_at"])
@@ -303,7 +310,9 @@ class Kernel:
                 result, reasons, expires = "DENY", [str(exc)], now
             # A denied record need not preserve malformed input as accepted evidence.
             accepted = [e.to_dict() for e in assessments if isinstance(e, Envelope)]
+            sequence = db.execute("SELECT COALESCE(MAX(seq),0)+1 FROM events").fetchone()[0]
             warrant = self.keys.sign(decider, "decision_warrant", {
+                "decision_sequence": sequence,
                 "action_digest": action.digest, "policy_digest": s["policy_digest"], "decision": result,
                 "reasons": reasons, "assessments": accepted, "alternatives": alternatives or [], "dissent": dissent or [],
                 "affected_parties": sorted({a["actor"], a["beneficiary"]}), "predictions": predictions or [],
@@ -321,7 +330,23 @@ class Kernel:
         if row is None or row["envelope"] != canonical(warrant.to_dict()):
             raise Rejected("decision warrant was not registered through the decision gate")
         exact(b, {"action_digest", "policy_digest", "decision", "reasons", "assessments", "alternatives",
-                  "dissent", "affected_parties", "predictions", "review_triggers", "issued_at", "expires_at", "scope"})
+                  "dissent", "affected_parties", "predictions", "review_triggers", "issued_at", "expires_at", "scope",
+                  "decision_sequence"})
+        natural(b["decision_sequence"])
+        # Receipt order, not wall-clock time, defines supersession. No old ALLOW
+        # can regain authority after a newer decision (including another ALLOW).
+        for event in db.execute("SELECT envelope FROM events ORDER BY seq DESC"):
+            receipt = Envelope.from_dict(loads(event["envelope"]))
+            if receipt.purpose != "decision_receipt":
+                continue
+            record = self.keys.verify(receipt, "decision_receipt", "decider")
+            if record["record"]["action_digest"] == action.digest:
+                if (record["sequence"] != b["decision_sequence"]
+                        or record["record"]["decision_digest"] != digest(warrant.to_dict())):
+                    raise Rejected("decision warrant superseded by a newer registered decision")
+                break
+        else:
+            raise Rejected("decision warrant has no registered decision receipt")
         a = action.body()
         self.keys.distinct(warrant.principal, a["actor"], a["beneficiary"])
         natural(b["issued_at"])
@@ -378,6 +403,8 @@ class Kernel:
                 raise Rejected("expired or mismatched exact-action capability")
             decision = self._check_decision(db, action, warrant, s, now)
             self.keys.distinct(executor.principal, *(item["principal"] for item in decision["assessments"]))
+            self.keys.distinct(capability.principal, a["actor"], a["beneficiary"], warrant.principal,
+                               *(item["principal"] for item in decision["assessments"]))
             chain = self._chain(db, token["grant_id"], now=now)
             if chain[0]["subject"] != a["actor"] or not {e["key"] for e in a["edits"]} <= set(chain[0]["keys"]):
                 raise Rejected("live grant no longer covers action")

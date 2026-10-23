@@ -146,6 +146,29 @@
         "test_deployment_check_is_closed",
         "test_runtime_has_no_external_execution_imports"
       ]
+    },
+    {
+      "id": "INV17",
+      "law": "SA",
+      "claim": "Newest registered exact-action decision supersedes old execution authority by receipt order",
+      "tests": [
+        "test_new_denial_invalidates_old_capability_without_spending",
+        "test_same_second_denial_invalidates_capability",
+        "test_same_second_allow_deny_allow_never_revives_old_capability",
+        "test_supersession_survives_kernel_reopen",
+        "test_failed_decision_receipt_does_not_supersede"
+      ]
+    },
+    {
+      "id": "INV18",
+      "law": "SA",
+      "claim": "Cross-role fixture domains and authorizer separation are current at commit",
+      "tests": [
+        "test_cross_role_assessors_cannot_share_trust_domain",
+        "test_human_review_cannot_share_assessor_domain",
+        "test_assessor_separation_rechecked_at_commit",
+        "test_authorizer_separation_rechecked_at_commit"
+      ]
     }
   ]
 }

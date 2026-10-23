@@ -40,6 +40,11 @@ worker, normative assessor, epistemic assessor, decision maker, authorizer,
 executor, human-review fixture, and root administrator. Different credentials and
 fixture trust-domain labels are checks on *declared administrative separation*.
 They are not evidence of cognitive independence or separately operated services.
+Normative, epistemic and supplied human-review assessments must have distinct
+fixture trust domains across roles; duties and rights may share a normative
+assessor. These checks and authorizer separation are reevaluated at commit.
+Registry-change tests are defense in depth for trusted-host configuration, not
+a claim to resist host compromise.
 
 Proposal registration writes inert metadata, not world state, grant authority or
 an execution event. The worker signs its proposed action. Manually constructing an
@@ -102,6 +107,25 @@ reconsideration triggers, limitations embedded in assessments, and expiration.
 These are reconstructive records. The default affected-party set is NOT a
 complete stakeholder analysis, predictions may be absent, and list preservation
 does not guarantee that important objections were originally elicited.
+
+Each new registered decision supersedes every earlier warrant for that exact
+action, whether the new result is ALLOW, DENY, REQUIRE_EVIDENCE or CONFIRM_HUMAN.
+Both authorization and commit check the latest signed decision receipt. A signed
+`decision_sequence` binds the warrant to the receipt sequence assigned in the same
+SQLite write transaction. Ledger order, not timestamp comparisons, resolves
+same-second reviews. Identical reevaluation creates a new warrant, so a later
+ALLOW never revives an old capability. Unrelated actions do not supersede it.
+
+A fresh ALLOW can support fresh authorization after a denial. Earlier findings
+and supplied dissent remain in the immutable records, but are not irrevocable
+vetoes: this kernel does not establish that the disagreement was resolved or harm
+repaired. An assessment merely signed with `assess` is not a registered decision
+and does not itself invalidate authority; it must pass through `decide`.
+
+Legacy warrants without `decision_sequence` fail closed. Existing records remain
+readable; obtain fresh review and authorization rather than upgrading old approval.
+Latest-decision checking scans the local receipt ledger in reverse order; this
+small sandbox implementation is not a scalable evidence-index service.
 
 No private chain-of-thought is required. Store concise reasons and auditable
 support, not a claim to recover the model's internal causal reasoning.

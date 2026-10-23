@@ -11,7 +11,7 @@ import hmac
 import secrets
 from typing import Any, Mapping
 
-from .canonical import Rejected, canonical, exact, loads, text
+from .canonical import Rejected, canonical, exact, loads, sha, text
 
 
 @dataclass(frozen=True)
@@ -108,7 +108,8 @@ class Keyring:
             raise Rejected("signer lacks the required role")
         expected = hmac.new(self._entries[envelope.principal][1],
                             self._message(envelope.principal, purpose, envelope.payload), hashlib.sha256).hexdigest()
-        if type(envelope.mac) is not str or not hmac.compare_digest(expected, envelope.mac):
+        sha(envelope.mac)  # Reject malformed/non-ASCII tags before compare_digest.
+        if not hmac.compare_digest(expected, envelope.mac):
             raise Rejected("invalid authentication tag")
         return envelope.body()
 
