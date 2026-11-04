@@ -89,3 +89,7 @@ All 70 v1 files are preserved byte-for-byte. This is an optional research
 addition, not a policy or kernel change, and not an independent review or
 production clearance. The repository's governance review remains required
 before merge. No distribution license has been selected by the owner.
+
+For representation and provenance lessons applied from Relay Atlas, see
+[evidence boundaries](docs/RELAY_EVIDENCE_BOUNDARIES.md). The accompanying
+dependency-free regression tests do not change the published model results.
